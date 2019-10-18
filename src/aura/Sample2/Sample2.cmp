@@ -1,0 +1,82 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+		<aura:registerEvent name="appEvent" type="c:SampleEvent"/>
+    <div class="slds-m-around--x-large">
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:user" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Contact Information</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/> <br/>
+    <fieldset class="slds-form--compound">
+        
+        <div class="form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-01">First Name</label>
+                    <input id="input-01" class="slds-input" type="text" />
+                </div>
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-02">Last Name</label>
+                    <input id="input-02" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-06">Phone Number</label>
+                    <input id="input-06" class="slds-input" type="text" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="slds-form--compound">
+        <legend class="slds-form-element__label">Address</legend>
+        <div class="form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-1">
+                    <label class="slds-form-element__label" for="input-03">Street</label>
+                    <input id="input-03" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-04">City</label>
+                    <input id="input-04" class="slds-input" type="text" />
+                </div>
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-05">State</label>
+                    <input id="input-05" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-06">ZIP Code</label>
+                    <input id="input-06" class="slds-input" type="text" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br/>
+    <center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClickPrevious }" />
+        <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center>
+    <br/>
+    </div>
+</aura:component>

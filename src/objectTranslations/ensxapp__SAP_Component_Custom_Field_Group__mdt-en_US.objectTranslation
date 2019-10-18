@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Component --></label>
+        <name>ensxapp__Component__c</name>
+        <picklistValues>
+            <masterLabel>Company Info</masterLabel>
+            <translation><!-- Company Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Details</masterLabel>
+            <translation><!-- Customer Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Sales Areas</masterLabel>
+            <translation><!-- Customer Sales Areas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Detail</masterLabel>
+            <translation><!-- Delivery Detail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Detail</masterLabel>
+            <translation><!-- Invoice Detail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Document Detail Header</masterLabel>
+            <translation><!-- Sales Document Detail Header --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- User-Defined Tab in SAP from which custom fields are to be drawn --></help>
+        <label><!-- User-Defined Type --></label>
+        <name>ensxapp__User_Defined_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

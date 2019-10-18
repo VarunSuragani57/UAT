@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Conference Call</fullName>
+        <default>false</default>
+        <label>Conference Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Distributor</fullName>
+        <default>false</default>
+        <label>Meeting - Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - End User</fullName>
+        <default>false</default>
+        <label>Meeting - End User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Retailer</fullName>
+        <default>false</default>
+        <label>Meeting - Retailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting - Joint Call</fullName>
+        <default>false</default>
+        <label>Meeting - Joint Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshow / Event</fullName>
+        <default>false</default>
+        <label>Tradeshow / Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

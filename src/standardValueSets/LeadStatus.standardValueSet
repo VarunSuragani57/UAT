@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Inquiry</fullName>
+        <default>false</default>
+        <label>Inquiry</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent To Field</fullName>
+        <default>false</default>
+        <label>Sent To Field</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect In Progress</fullName>
+        <default>false</default>
+        <label>Prospect In Progress</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved Converted</fullName>
+        <default>false</default>
+        <label>Approved Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L1 - Inquiry</fullName>
+        <default>true</default>
+        <label>L1 - Inquiry</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L2 - Qualifying</fullName>
+        <default>false</default>
+        <label>L2 - Qualifying</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L3 - Application Sent</fullName>
+        <default>false</default>
+        <label>L3 - Application Sent</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L4 - Credit Review</fullName>
+        <default>false</default>
+        <label>L4 - Credit Review</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L5 - Approved/Converted</fullName>
+        <default>false</default>
+        <label>L5 - Approved/Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>L6 - Weartest</fullName>
+        <default>false</default>
+        <label>L6 - Weartest</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>D - Disqualified</fullName>
+        <default>false</default>
+        <label>D - Disqualified</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

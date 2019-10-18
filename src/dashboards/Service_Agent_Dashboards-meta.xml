@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Service Agent Dashboards</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Analyst_Project_and_Reporting</role>
+        <role>Associate_Canada</role>
+        <role>Associate_Clerical</role>
+        <role>Associate_Consumer</role>
+        <role>Associate_Order_Entry</role>
+        <role>Associate_Retail</role>
+        <role>Coordinator_Product_Enhancement</role>
+        <role>Coordinator_Training_and_Quality</role>
+        <role>Focus_Account_Specialist</role>
+        <role>Seasonal_Consumer</role>
+        <role>Seasonal_Retail</role>
+        <role>Special_Services_Coordinator</role>
+        <role>Specialist_Industrial_Account</role>
+        <role>Team_Lead_Consumer</role>
+        <role>Team_Lead_Retail</role>
+    </sharedTo>
+</DashboardFolder>

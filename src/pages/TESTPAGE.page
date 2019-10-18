@@ -1,0 +1,199 @@
+<apex:page controller="LeadGenerationController"  cache="false" docType="html-5.0" sidebar="false" showHeader="false"  lightningStylesheets="true" >
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" html-autocomplete="off">
+        <head>
+            <title>Cases</title>
+            <apex:slds />
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/css/jquery.dataTables.min.css" />
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            
+        </head>
+        <body class="slds-scope">
+            <style type="text/css">
+                .bPageBlock {
+                border-top: 4px solid white;
+                }         
+                .slds-scope h3 {
+                display: block !important;
+                width: 100%;
+                }
+                
+                .slds-scope .slds-input,
+                .slds-scope .slds-select {
+                margin-bottom: 2rem;
+                }
+                
+                .slds-scope .slds-select {
+                padding-left: 0.5rem;
+                }
+                
+                .slds-scope .slds-form-element__label span {
+                color: red;
+                font-size: 1rem;
+                font-weight: 1000 rem;
+                }
+                
+                .slds-scope .grey {
+                background-color: #eee;
+                }
+                
+                .slds-scope .header {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+                }
+                
+                .slds-scope .slds-icon {
+                width: 1.25rem;
+                height: 1.25rem;
+                }
+            </style>
+            <apex:form >
+               <!-- <div class="slds-brand-band slds-brand-band_Small"> -->
+                    <div class="slds-m-around--xx-large">
+                        
+                        <h3 class="slds-section-title--divider">Lead Information</h3>
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1 slds-medium-size_1-of-3">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                         <label class="slds-form-element__label">Lead Owner</label>         
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                   
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slds-size_1-of-1 slds-medium-size_1-of-3">
+                            </div>
+                            <div class="slds-size_1-of-1 slds-medium-size_1-of-3">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                         <label class="slds-form-element__label">Lead Owner</label>         
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                   
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                         <label class="slds-form-element__label">Lead Source</label>      
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}"  />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Name</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler City</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}"/>
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Country</label>           
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <b><h3 class="slds-section-title--divider ">END User Profile</h3></b>
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <b> <label class="slds-form-element__label">Transshipping Case Number</label>   </b>        
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Name</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler City</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Country</label>           
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <b> <label class="slds-form-element__label">Transshipping Case Number</label>   </b>        
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}"  />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Name</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler City</label>          
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" html-disabled="true"/>
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <label class="slds-form-element__label">Injured Bottler Country</label>           
+                                    </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                        <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              <!--  </div> -->
+                
+                
+              
+            </apex:form>        
+        </body>
+    </html>                  
+</apex:page>

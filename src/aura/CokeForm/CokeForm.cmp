@@ -1,0 +1,276 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+   
+    
+   
+  
+    <form aura:Id="CaseForm" >
+        <div class="slds-p-around_large">
+            <div class="slds-m-aroundlarge">
+                <div class="slds-text-heading_large">NON-EEA Transshipping Protocol - USA Products Only</div>
+                <div class="slds-p-left_x-small" style="background: rgb(216, 221, 230);color:black;"><span class="slds-text-heading_medium">Bottler Transshipping Complaint Form</span><br></br>
+                    Please fill out the following information to submit your complaint. All the fields with a red asterisk are required</div>
+                <br/>
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Submitter First Name</span> <span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                   
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span >Injured Bottler Name</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                  
+                    <div id="SuggestionId">
+                   
+                        </div>
+				</div> 
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span>Submitter Last Name</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                  
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Injured Bottle City</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                   
+                </div>             
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Submitter Email Address</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Injured Bottler State</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                
+                </div>                
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Submitter Phone Number</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Injured Bottler Country</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                 
+                        
+                   
+                </div>          
+            </div>
+            <div>
+                <div class="headingWrap">
+                    <div class="headingLinks">
+                        <div class="headerText">
+                            Transshipping Information
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Outlet Name</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                 <!--     <ui:inputText aura:id="OutletName" value="{!v.newCaseRecord.Outlet_Name__c}" class="requiredInput" required="true" maxlength="100"/>  -->
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Key Account</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                 <!--     <ui:inputText aura:id="KeyAcc" value="{!v.newCaseRecord.Key_Account__c}" class="requiredOutput" required="true" maxlength="50"/> -->
+                </div>
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Outlet Address</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+               <!--     <ui:inputTextArea aura:id="OutletAdd" value="{!v.newCaseRecord.Outlet_Address__c}" class="requiredInput" required="true" maxlength="255"/>  -->
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Facility</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+              <!--      <ui:inputText aura:id="Facility" value="{!v.newCaseRecord.Facility__c}" class="requiredInput"  required="true" maxlength="100"/> -->
+                </div>       
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Outlet City</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                <!--    <ui:inputText aura:id="OutletCity" value="{!v.newCaseRecord.Outlet_City__c}" class="requiredInput" required="true" maxlength="50"/> -->
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Type of Issue</span><span>*</span>
+                </div>
+                
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >Outlet State</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                   
+                </div> 
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">  
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+            </div>
+            <div class="slds-grid  slds-wrap slds-grid_pull-padded slds-m-around_small">
+                <div class=" mobileHide slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                    <span>Outlet Country</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8" >
+                   
+                </div>
+                <div class="slds-medium-size_1-of-6 slds-large-size_2-of-8" >
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    <span >How Product Entered Territory</span><span>*</span>
+                </div>
+                <div class="slds-small-size_1-of-1  slds-medium-size_1-of-6 slds-large-size_1-of-8">
+                    
+                </div>   
+            </div>
+            <div class="atsTable slds-p-around_large grey">
+                <table aura:id="data_table1" id="data_table1"   class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered " style="border: 1px solid rgb(216, 221, 230);">
+                    <thead>
+                        <tr class="slds-text-title_caps" >
+                            <th scope="col">
+                                <div class="slds-truncate"></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Brand">Brand<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Package">Package<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="# of product cases"># of product cases<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="# of Vending Machines"># of Vending Machines</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Production Center Code">Production Center Code<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Production Center Code">Production Center Name<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Production Code">Production Code<span>*</span></div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Attachments">Attachments</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Attachments">Actions</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.LineItems}" var="r" indexVar="index">
+                            <tr data-index="{!index}">
+                               
+                                <td scope="row" data-label="Brand">
+                                   
+                                </td>
+                                <td scope="row" data-label="Package">
+                                   
+                                </td>    
+                                <td scope="row" data-label="# of product cases">
+                                                               </td>
+                                <td scope="row" data-label="# of Vending Machines">
+                                  
+                                </td>
+                                <td scope="row" data-label="Production Center Code">
+                                    
+                                </td>
+                                <td scope="row" data-label="Production Center Name">
+                                    
+                                </td>
+                                <td scope="row" data-label="Production Code">
+                                   
+                                </td>
+                                <td scope="row" data-label="Attachments">
+                                   
+                                </td>
+                                <td>
+                                    <a onclick="{!c.createTableRow}"><lightning:icon iconName="utility:check" /></a>
+                                    <a data-index="{!index}" onclick="{!c.deleteTableRow}"><lightning:icon iconName="utility:close" variant="error"/></a>	
+                                </td>
+                            </tr>
+                        </aura:iteration> 
+                    </tbody>
+                </table> 
+            </div>
+            <table class="totalTable" Style="width=50px;" width="100px;">
+                <tr class="totalTr" style="">
+                    <td >
+                        Total &nbsp;&nbsp;
+                    </td>
+                    <td >
+                                           </td>
+                </tr>
+            </table>
+            <div class="slds-clearfix slds-p-top_large"  style="text-align:center">
+                <span>Please contact the Director of Transshipping if you have any issues completing this form at  404-295-4687</span>
+                <div class="slds-float_right"><lightning:button variant="brand" label="Submit" onclick="{!c.SavePage}" /></div>
+            </div>
+        </div>
+    </form> 
+   
+    <div aura:Id= "ThankyouText" class="toggle" ><h1 class="slds-text-heading_large slds-align_absolute-center">Thank you for submitting the case</h1><img src="https://ccnag--atsdev--c.cs17.content.force.com/servlet/servlet.FileDownload?file=015g0000000fdjm"  style="width: 15rem; height: 25rem;margin-left: 10%;float: left;"/>
+    </div>
+</aura:component>

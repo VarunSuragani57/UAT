@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Electrical Contractor</fullName>
+        <default>false</default>
+        <label>Electrical Contractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Industry</fullName>
+        <default>false</default>
+        <label>General Industry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrial / Safety</fullName>
+        <default>false</default>
+        <label>Industrial / Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Petrochemical</fullName>
+        <default>false</default>
+        <label>Petrochemical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utility Contractor</fullName>
+        <default>false</default>
+        <label>Utility Contractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utility Co-op</fullName>
+        <default>false</default>
+        <label>Utility Co-op</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utility Investor Owned</fullName>
+        <default>false</default>
+        <label>Utility Investor Owned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utility Municipality</fullName>
+        <default>false</default>
+        <label>Utility Municipality</label>
+    </standardValue>
+</StandardValueSet>

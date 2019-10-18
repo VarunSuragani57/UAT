@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Delivery Type Value --></label>
+        <name>ensxapp__Delivery_Type_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Delivery Search Preset --></label>
+        <name>ensxapp__SAP_Delivery_Search_Preset__c</name>
+        <relationshipLabel><!-- SAP Delivery Search Preset Doc Types --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

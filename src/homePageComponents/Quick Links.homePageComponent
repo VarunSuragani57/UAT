@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Key_Activities_Report</links>
+    <links>Next_90_Days_Oppty_Report</links>
+    <links>Mass_Email</links>
+    <links>My_Email_Templates</links>
+    <links>Salesforce_Training</links>
+    <links>Download_Salesforce_for_Outlook</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

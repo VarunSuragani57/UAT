@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SHORT_NAME</field>
+    </columns>
+    <columns>
+        <field>LONG_NAME</field>
+    </columns>
+    <columns>
+        <field>FOLDER</field>
+    </columns>
+    <columns>
+        <field>CREATEDDATE</field>
+    </columns>
+    <columns>
+        <field>LASTMODIFIED</field>
+    </columns>
+    <columns>
+        <field>LASTMODIFIEDDATE</field>
+    </columns>
+    <columns>
+        <field>LASTRUNDATE</field>
+    </columns>
+    <description>Number of custom reports created by tech sales users</description>
+    <filter>
+        <booleanFilter>1 or 2 or 3 or 4 or 5 or 6 or 7</booleanFilter>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Tom Kiddle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Rick Hawthorne</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>John Gould</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>John Machock</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Brian Bonin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Paul Noto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LASTMODIFIED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Gary Hartson</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tech Sales Custom Reports by User</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ReportList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATEDDATE</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

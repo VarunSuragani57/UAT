@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New Core Business</fullName>
+        <default>false</default>
+        <label>New Core Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Add-on Core Business</fullName>
+        <default>false</default>
+        <label>Add-on Core Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New FR Business</fullName>
+        <default>false</default>
+        <label>New FR Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Add-on FR Business</fullName>
+        <default>false</default>
+        <label>Add-on FR Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Carhartt Renewal</fullName>
+        <default>false</default>
+        <label>Carhartt Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor Stock</fullName>
+        <default>false</default>
+        <label>Distributor Stock</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mark Down</fullName>
+        <default>false</default>
+        <label>Mark Down</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RTV</fullName>
+        <default>false</default>
+        <label>RTV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitive Share</fullName>
+        <default>false</default>
+        <label>Competitive Share</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reacquired Lost Space</fullName>
+        <default>false</default>
+        <label>Reacquired Lost Space</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NEW Program</fullName>
+        <default>false</default>
+        <label>NEW Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ANNUAL Program</fullName>
+        <default>false</default>
+        <label>ANNUAL Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADDITION To Program</fullName>
+        <default>false</default>
+        <label>ADDITION To Program</label>
+    </standardValue>
+</StandardValueSet>

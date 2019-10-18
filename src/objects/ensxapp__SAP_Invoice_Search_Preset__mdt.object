@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Defines predefined search criteria for SAP Invoice searches</description>
+    <label>SAP Invoice Search Preset</label>
+    <pluralLabel>SAP Invoice Search Presets</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

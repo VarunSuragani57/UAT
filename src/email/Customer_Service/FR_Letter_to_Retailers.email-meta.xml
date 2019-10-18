@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_2017</letterhead>
+    <name>FR Letter to Retailers</name>
+    <style>freeForm</style>
+    <subject>FR Letter to Our Retailers</subject>
+    <textOnly>October 16, 2017
+
+
+To Our Valued Partners,
+
+
+As you may be aware, there are several styles of FR Knits and Sweats for which we have exceeded our capacity and forecast. We understand that this has presented some challenges for you specific to product cancelations.
+
+
+The products include:
+
+
+· 100234 – FR Force Cotton SS T-shirt
+
+· 100235 – FR Force Cotton LS T-shirt
+
+· 100237 – FR Force Cotton LS Henley
+
+· 102690 – FR HW Hooded Zip Front Sweatshirt
+
+· 102903 – FR Force SS T-shirt
+
+· 102904 – FR Force LS T-shirt
+
+· 102907 – FR HW Hooded Sweatshirt
+
+· 102908 – FR HW Zip Front Sweatshirt
+
+
+The Carhartt team is focused on improving our position on these items so that you will be able to continue to work with us as we build this Industrial business together. At this time, we are working to establish revised inventory levels and availability dates for these particular styles. Please be assured that your Sales Representative will continue to provide you updates on our progress and plans. Until then, these items will have limited distribution.
+
+
+We apologize for this inconvenience and thank you for continuing to support the Carhartt brand.
+
+
+
+Our best,
+
+
+The Carhartt Sales Leadership Team
+
+
+
+
+
+*Please do not respond to this email address and consult with your Sales Rep or the Customer Service department with further questions or concerns.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

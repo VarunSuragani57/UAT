@@ -1,0 +1,67 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="myRecordId" type="String" description="Record to which the files should be attached" />
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Idea Title and Details</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Idea Title:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Tell about your idea in text box below:</label>
+            <div class="slds-form-element__control">
+                <textarea id="textarea-id-01" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Tell about your idea in text box below:</label>
+            <div class="slds-form-element__control">
+                <textarea id="textarea-id-01" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Idea Title:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    <input type="file" class="slds-file-selector__input slds-assistive-text" accept="image/png" id="file-upload-input-01" aria-describedby="error-01" aria-labelledby="file-selector-primary-label file-selector-secondary-label" />
+    <lightning:fileUpload label="Attach receipt"
+                          name="fileUploader"  
+                          accept=".pdf,.png"
+                          recordId="{!v.myRecordId}" 
+                          onuploadfinished="{!c.handleUploadFinished}" />
+    <center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClickPrevious }" />
+        <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center>
+</aura:component>

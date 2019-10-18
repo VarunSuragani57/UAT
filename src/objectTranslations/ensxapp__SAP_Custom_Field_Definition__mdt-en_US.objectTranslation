@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This indicates the order in which columns will be displayed --></help>
+        <label><!-- Column Order --></label>
+        <name>ensxapp__Column_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- If multilingual support is required, use this to insert the fullName value of the Custom Label to be used for the column value --></help>
+        <label><!-- Custom Label --></label>
+        <name>ensxapp__Custom_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the default label value that will be used for Column or Label name --></help>
+        <label><!-- Default Label --></label>
+        <name>ensxapp__Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the component this field definition will be linked to --></help>
+        <label><!-- SAP Custom Field Definition --></label>
+        <name>ensxapp__SAP_Component_Custom_Field_Group__c</name>
+        <relationshipLabel><!-- SAP Custom Field Definition Parameters --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the custom field as listed in SAP --></help>
+        <label><!-- SAP Field --></label>
+        <name>ensxapp__SAP_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

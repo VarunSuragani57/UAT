@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New industrial catalog attached</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_NEW</letterhead>
+    <name>New Industrial Catalog</name>
+    <style>freeForm</style>
+    <subject>New Carhartt Industrial Catalog</subject>
+    <textOnly>{!Contact.FirstName}
+
+Attached you will find an updated Industrial catalog along with our most current pricing. Please feel free to use the catalog for distribution within your company’s network as well as current and potential end user customers.
+
+This catalog contains Carhartt Flame Resistant styles as well as our most popular non-FR products. The items showcased in this catalog reflect our top selling styles Carhartt inventories throughout the year. This catalog can also be ordered in hard copy through Carhartt Co-Op.
+
+Once you have received this information, please feel free to contact me at your earliest convenience should you have any questions.
+
+At Carhartt, it is our continued pledge to provide you with excellence in our services and products. On behalf of the 5,000 people that work at Carhartt, I thank you for your commitment and dedication to the Carhartt brand.
+
+Regards,
+
+{!User.Name}
+{!User.Phone}
+{!User.MobilePhone}
+{!User.Email}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

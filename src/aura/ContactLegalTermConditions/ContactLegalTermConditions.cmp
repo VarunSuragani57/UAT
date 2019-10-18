@@ -1,0 +1,68 @@
+<aura:component controller="ContactIdeaController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global"   >
+    
+    <aura:attribute name="listOfStatement" type="List"  default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInIt}"/>
+    <aura:attribute name="message" description="Message content, can be HTML" type="String" default=""/>
+    <aura:attribute name="messageType" description="" type="String" default=""/>
+    <aura:registerEvent name="appEvent" type="c:SampleEvent"/>
+    <div class="parent" Style="background-color:#FDB813; color:#000000; font-family: Arial; font-size: 14pt" >
+        <br></br>
+        <img src="{!$Resource.IdeasthatworkHeader}" class="slds-align_absolute-center" width="800"/>
+        
+        <div class="child" Style="background-color:#FFF8E8;margin-left:5%;margin-right:5%;">
+            <br/>
+            <div Style="padding-left: 5%;padding-right: 5%;" aura:Id="messageComponent" class="slds-hide"> 
+                <c:MessageComponent type="{!v.messageType}" message="{!v.message}" />
+            </div>
+            <div class="slds-form-element Text"  Style="margin-left:5%;margin-right:5%;">
+                
+                <br/>
+                <div class="slds-form-element__control">
+                    
+                    <br/>
+                    <h1>
+                        <b> <span  Style= "font-family: Arial; font-size: 16pt;" >Before submitting your idea, please read and check all of the below legal terms and conditions.</span>
+                        </b> 
+                    </h1>
+                    <br/>
+                    
+                    <table >
+                        <aura:iteration items="{!v.listOfStatement}" var="item">
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element">
+                                    
+                                    <tr> <td style="text-align:top;float: left;"><label class="slds-checkbox">
+                                        <ui:inputcheckbox  aura:id="boxPack" class="slds-input" value="{!item.isChecked__c}" />
+                                        <span class="slds-checkbox--faux"></span>
+                                        </label>
+                                        </td>
+                                        <td>
+                                            <span  style="font-size:16pt;font-family:Arial;">{!item.Statement__c}</span>
+                                        </td>
+                                    </tr>
+                                    <tr> 
+                                        <td><br/></td>
+                                        <td><br/></td>
+                                    </tr>
+                                </div>  
+                            </div>
+                        </aura:iteration> 
+                    </table>
+                </div>
+            </div>
+            <div class="slds-float--right">
+                
+                <input onclick="{!c.handleClickPrevious}" type="button"  value="Previous" style="background-color:#fdb913;
+                                                                                                 border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                 font-size: 20px; height:50px; width:150px; " >
+                </input>
+                &nbsp;
+                <input onclick="{!c.handleClickNext}" type="button"  value="Next" style="background-color:#fdb913;
+                                                                                         border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                         font-size: 20px; height:50px; width:150px;" >
+                </input>
+                &nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <br/> <br/><br/><br/>
+        </div> <br/> <br/><br/><br/>     </div>
+    <br/><br/><br/>   
+</aura:component>

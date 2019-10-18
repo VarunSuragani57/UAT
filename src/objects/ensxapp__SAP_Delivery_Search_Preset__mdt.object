@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Predefined search criteria for enosiX Delivery Search</description>
+    <fields>
+        <fullName>ensxapp__Open__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is this delivery currently in an &quot;Open&quot; status</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Open</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Packed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Has this delivery currently been packed</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Packed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Picked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Has this delivery currently been picked</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Picked</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>SAP Delivery Search Preset</label>
+    <pluralLabel>SAP Delivery Search Preset</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

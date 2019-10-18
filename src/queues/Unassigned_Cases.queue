@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>unassigned.cases@ch.com.de</email>
+    <name>Unassigned Cases</name>
+    <queueMembers>
+        <roles>
+            <role>Coordinator_Training_and_Quality</role>
+            <role>Director_of_Customer_Engagement</role>
+            <role>Manager_Operations</role>
+            <role>Manager_Training_and_Quality</role>
+            <role>Service_Delivery_Manager_Consumer</role>
+            <role>Service_Delivery_Manager_Retail</role>
+            <role>Sr_Manager_Account_Services</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

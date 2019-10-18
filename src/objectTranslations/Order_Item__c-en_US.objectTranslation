@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Order Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- $ Discount (if applicable) --></label>
+        <name>Discount_if_applicable_Dollar__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Discount (if applicable) --></label>
+        <name>Discount_if_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Cost --></label>
+        <name>Product_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax --></label>
+        <name>Tax__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Single Item order --></label>
+        <name>Single_Item_order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Total order --></label>
+        <name>Total_order</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

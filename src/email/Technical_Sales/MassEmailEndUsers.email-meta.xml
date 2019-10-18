@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>SharedDocuments/Spring_2010_FR_Brochure.pdf</attachedDocuments>
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MassEmailEndUsers</name>
+    <style>none</style>
+    <subject>Carhartt FR News!</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

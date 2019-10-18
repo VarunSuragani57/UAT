@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mappings between Salesforce Objects and SAP Pricing fields</description>
+    <fields>
+        <fullName>ensxapp__SAP_Input__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this field gets sent to SAP</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Input</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Output__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this field gets a value from SAP mapped back to the Salesforce Object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Output</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Pricing_Field_Definition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Corresponding field definition for SAP</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Pricing Field Definition</label>
+        <referenceTo>ensxapp__SAP_Pricing_Field_Definition__mdt</referenceTo>
+        <relationshipLabel>SAP Pricing Fields</relationshipLabel>
+        <relationshipName>SAP_Pricing_Fields</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Pricing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps a field on Opportunity Products to an SAP Field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Pricing</label>
+        <referenceTo>ensxapp__SAP_Pricing__mdt</referenceTo>
+        <relationshipLabel>SAP Pricing Fields</relationshipLabel>
+        <relationshipName>SAP_Pricing_Fields1</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Salesforce object that unto which this gets mapped.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Salesforce Field</label>
+        <metadataRelationshipControllingField>ensxapp__SAP_Pricing_Field__mdt.ensxapp__Salesforce_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>SAP_Pricing_Fields</relationshipLabel>
+        <relationshipName>SAP_Pricing_Fields</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce Object for this field mapping</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This should be either Opportunity or Opportunity Product</inlineHelpText>
+        <label>Salesforce Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>SAP_Pricing_Fields</relationshipLabel>
+        <relationshipName>SAP_Pricing_Fields</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Static value for this field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Static values *always* override any fields that were mapped on the Salesforce object.</inlineHelpText>
+        <label>Value</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Pricing Field</label>
+    <pluralLabel>SAP Pricing Fields</pluralLabel>
+    <validationRules>
+        <fullName>ensxapp__Field_Definition_Suports_Input</fullName>
+        <active>true</active>
+        <description>This field cannot be mapped as an output field from SAP. Please clear the SAP Output checkbox.</description>
+        <errorConditionFormula>AND(
+ ensxapp__SAP_Input__c,
+NOT( ensxapp__SAP_Pricing_Field_Definition__r.ensxapp__Can_Input__c )
+)</errorConditionFormula>
+        <errorMessage>This field cannot be mapped as an input field to SAP. Please clear the SAP Input checkbox.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__Field_Definition_Supports_Output</fullName>
+        <active>true</active>
+        <description>Verify that this field can be used for output</description>
+        <errorConditionFormula>AND(
+ ensxapp__SAP_Output__c, 
+NOT(ensxapp__SAP_Pricing_Field_Definition__r.ensxapp__Can_Output__c)
+)</errorConditionFormula>
+        <errorMessage>This field cannot be mapped as an output field from SAP. Please clear the SAP Output checkbox.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__Static_Values_Input_Only</fullName>
+        <active>true</active>
+        <description>Static field values can only be used for input fields</description>
+        <errorConditionFormula>AND(
+ensxapp__SAP_Output__c,
+NOT(ISBLANK(ensxapp__Value__c)) 
+)</errorConditionFormula>
+        <errorMessage>Fields mapped with static values can only be used as input fields. Please clear &quot;Is Output&quot; checkbox.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

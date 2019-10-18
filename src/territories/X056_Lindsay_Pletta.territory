@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Midwest - Lindsay Pletta</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>056-Lindsay Pletta</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <accountAccessLevel>Edit</accountAccessLevel>
+    <parentTerritory>TechnicalSales</parentTerritory>
+</Territory>

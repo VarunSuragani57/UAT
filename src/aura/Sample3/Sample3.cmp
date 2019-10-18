@@ -1,0 +1,77 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="selectedValue" type="String" default="Red"/>
+     <aura:attribute name="options" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.loadOptions}" />
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Idea Category</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/> 
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <lightning:select name="mySelect" label="Select a color:" aura:id="mySelect" value="{!v.selectedValue}">
+                <aura:iteration items="{!v.options}" var="item">
+                    <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Please give your idea using the text box below:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <fieldset class="slds-form-element">
+            <legend class="slds-form-element__legend slds-form-element__label">What kind of idea do you have?</legend>
+            <div class="slds-form-element__control">
+                <span class="slds-radio">
+                    <input type="radio" id="radio-3" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-3">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">New product of product improvement Idea.</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-4" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-4">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">Request to bring back discontinued product.</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-5" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-5">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">Request to additional sizes on a current product.</span>
+                    </label>
+                </span>
+            </div>
+        </fieldset>
+    </div>
+    <br/><center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClickPrevious }" />
+    <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center><br/>
+</aura:component>

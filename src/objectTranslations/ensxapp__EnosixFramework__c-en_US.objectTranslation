@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- HTTP Compression --></label>
+        <name>ensxapp__Compression_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows for overriding the Smart Business Object configuration in SAP for a specific environment or application --></help>
+        <label><!-- Customizing ID --></label>
+        <name>ensxapp__Customizing_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Client --></label>
+        <name>ensxapp__SAP_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Host --></label>
+        <name>ensxapp__SAP_Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timeout --></label>
+        <name>ensxapp__Timeout__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>Inside_Sales/Credit_Application_doc.doc</attachedDocuments>
+    <attachedDocuments>Inside_Sales/Open_Account_Guidelines_doc.doc</attachedDocuments>
+    <attachedDocuments>Inside_Sales/PROSPECT_QUESTIONNAIRE_2011_xls.xls</attachedDocuments>
+    <available>true</available>
+    <description>Followup after initial call, includes key docs to complete and return</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_NEW</letterhead>
+    <name>New Retailer Prospect - Documents</name>
+    <style>freeForm</style>
+    <subject>Carhartt Application forms</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+Per our conversation this morning, I have attached the prospect form and credit application to this email.  Please fill those out at your convenience and return to me along w/ a copy of your sales tax certificate and 2 pictures of your store.  I will pass that along to the sales rep and have him or her contact you.  Please let me know if you need any more information or have any other questions.
+
+Thank you for your interest in Carhartt!
+
+Regards,
+
+{!User.Name}
+{!User.Phone}
+{!User.Email}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

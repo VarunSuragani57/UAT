@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SAP Input --></label>
+        <name>ensxapp__SAP_Input__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Output --></label>
+        <name>ensxapp__SAP_Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Pricing Field Definition --></label>
+        <name>ensxapp__SAP_Pricing_Field_Definition__c</name>
+        <relationshipLabel><!-- SAP Pricing Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAP Pricing --></label>
+        <name>ensxapp__SAP_Pricing__c</name>
+        <relationshipLabel><!-- SAP Pricing Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Field --></label>
+        <name>ensxapp__Salesforce_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be either Opportunity or Opportunity Product --></help>
+        <label><!-- Salesforce Object --></label>
+        <name>ensxapp__Salesforce_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Static values *always* override any fields that were mapped on the Salesforce object. --></help>
+        <label><!-- Value --></label>
+        <name>ensxapp__Value__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- This field cannot be mapped as an input field to SAP. Please clear the SAP Input checkbox. --></errorMessage>
+        <name>ensxapp__Field_Definition_Suports_Input</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field cannot be mapped as an output field from SAP. Please clear the SAP Output checkbox. --></errorMessage>
+        <name>ensxapp__Field_Definition_Supports_Output</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fields mapped with static values can only be used as input fields. Please clear &quot;Is Output&quot; checkbox. --></errorMessage>
+        <name>ensxapp__Static_Values_Input_Only</name>
+    </validationRules>
+</CustomObjectTranslation>

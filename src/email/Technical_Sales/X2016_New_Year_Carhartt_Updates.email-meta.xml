@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_FR_Letterhead</letterhead>
+    <name>2016 New Year Carhartt Updates</name>
+    <style>freeForm</style>
+    <subject>Carhartt 2016 Updates</subject>
+    <textOnly>Happy 2016! I trust you are all off to a great start.
+
+
+
+Attached you will find our 2016 Industrial catalog along with an attachment showing the styles we will be removing from our Flame Resistant offering this year. There are 4 tabs which will also show you what styles we have come out with to replace those dropped styles.
+
+
+Please feel free to use the catalog for distribution within your company’s network.
+
+
+The items showcased in this catalog reflect our top selling styles Carhartt inventories throughout the year.
+
+
+Best of luck to you all in 2016 and please don&apos;t hesitate to reach out to me for your clothing/or Carhartt needs!
+
+
+
+Kiera Zink
+
+
+Industrial Business Manager
+
+
+Rocky Mountain Region
+
+
+
+
+Cell: 303-515-0833
+
+
+Fax: 313-253-1947
+
+
+
+
+kzink@carhartt.com
+
+
+www.carharttfr.com
+
+
+
+
+Customer Service: 800-786-3916</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

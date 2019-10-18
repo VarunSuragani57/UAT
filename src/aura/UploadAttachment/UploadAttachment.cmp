@@ -1,0 +1,19 @@
+<aura:component Controller="UploadImgController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="inputFile" type="Object"/>
+    <aura:attribute name="inputFiles" type="Object[]"/>
+    <aura:attribute name="fileNames" type="String[]"/>
+    <aura:attribute name="inputDOMid" type="String"/>
+    <aura:attribute name="rowIndex" type="String" />
+	<aura:attribute name="ParentId" type="String" />
+		<aura:registerEvent name="bindAttachment" type="c:BindAttachment"/>
+        <aura:handler event="c:SaveAttachments" action="{!c.handleApplicationEvent}"/>
+   <!-- <lightning:input type="file" class="slds-file-selector__input slds-assistive-text" 
+                       aura:id="{#inputDOMid}"   onchange="{!c.updateFileName}"/> -->
+   {! v.inputDOMid}
+     <lightning:input type="file"  aura:id="uploader1"  label="" 
+                      name="file" multiple="true" 
+                      accept="image/png, .zip" onchange="{! c.updateFileName }"/>           
+		 <aura:iteration items="{!v.inputFiles}" var="file">
+             <li>{!file.name}</li>
+    	</aura:iteration>
+</aura:component>

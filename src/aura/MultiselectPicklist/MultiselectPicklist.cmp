@@ -1,0 +1,58 @@
+<aura:component Controller="MultiselectController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <br/><br/><br/>
+    <aura:attribute name="Catlist" type="MultiSelectControllerWrapper[]"  />
+    <aura:attribute name="Acclist2" type="MultiSelectControllerWrapper[]"   />
+    <aura:attribute name="selectedCategoryList" type="String[]"  />
+    <aura:attribute name="checkedList" type="String[]"  />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div style="margin-Left:100px;"> 
+        <span ><legend class="slds-form-element__legend slds-form-element__label">
+            <abbr class="slds-required" title="required"></abbr> Catergory</legend>
+            <br/>
+            <div class="slds-scrollable" style="height: 7rem; width: 24rem;">
+                <fieldset class="slds-form-element">
+                    
+                    <div class="slds-form-element__control" >
+                        <aura:iteration var="contact" items="{!v.Catlist}">
+                            
+                            <input  type="checkbox" name="options" id="{!contact.objCategoryMangement.Category__c}" value="{!contact.objCategoryMangement.Category__c}" onchange="{!c.onCheck}" checked="{!contact.isSelected}" />
+                            <label class="slds-checkbox__label" for="{!contact.objCategoryMangement.Category__c}">
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-form-element__label">{!contact.objCategoryMangement.Category__c}</span>
+                            </label>
+                            <br/>
+                        </aura:iteration>
+                        
+                    </div>
+                </fieldset>
+            </div></span>
+        
+        <br/><br/>
+        <span><legend class="slds-form-element__legend slds-form-element__label">
+            <abbr class="slds-required" title="required"></abbr>Materials</legend>
+            <br/>
+            <div class="slds-scrollable" style="height: 7rem; width: 24rem;">
+                <fieldset class="slds-form-element">
+                    
+                    <div class="slds-form-element__control">
+                        <aura:iteration var="contact" items="{!v.Acclist2}">
+                            <input type="checkbox" name="options" id="{!contact.objCategoryMangement.Material__c}" value="{!contact.objCategoryMangement.Material__c}" onchange="{!c.onCheckMaterial}" checked="{!contact.isSelected}"/>
+                            <label class="slds-checkbox__label" for="{!contact.objCategoryMangement.Material__c}">
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-form-element__label">{!contact.objCategoryMangement.Material__c}</span>
+                            </label><br/>
+                        </aura:iteration>
+                    </div>
+                </fieldset>
+            </div></span>
+        
+        
+    </div>
+    
+    
+    
+    <br/>
+    
+    <br/><br/>
+    <button class="slds-button slds-button--brand" style="margin-Left:100px;" onclick="{!c.onsubmit}">Save Category</button>
+</aura:component>

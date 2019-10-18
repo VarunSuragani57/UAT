@@ -1,0 +1,76 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="Lookup" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute Name="selItem" type="object"  access="public" />
+    <aura:attribute name="today" type="Date" default=""/>
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="itemssss" type="String" />
+    <aura:attribute name="fieldName" type="String" default="Customer_PromoCodes__c" />
+    <aura:attribute name="picklistValues" type="Object"  default="Promo_Code_Type__c"/>    
+    <aura:attribute name="CustomerPromoCodes" type="Customer_PromoCodes__c" 
+                    default="{ 'sobjectType': 'Customer_PromoCodes__c' }"/>
+    
+    
+    <div class="slds-page-header">
+        <div class="slds-grid" Style="background-color: rgb(0, 0, 0);">
+            <div class="slds-col slds-has-flexi-truncate">
+                <center>
+                    <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"  title="My Contacts">Coupon Code</h1>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="slds-form" style="width: 50%;margin-left: 25%;">
+        <div class="slds-form-element slds-form-element_horizontal">
+            <label class="slds-form-element__label" for="horizontal-input-id-01">Agent Name</label>
+            <div class="slds-form-element__control">
+                <c:Lookup objectName="User"
+                          field_API_text="Name"
+                          field_API_val="Id"
+                          limit="4"
+                          field_API_search="Name"
+                          lookupIcon="standard:user" 
+                          selItem="{!v.selItem}" 
+                          placeholder="Enter space after text to search Agent Name"
+                          /> 
+            </div>
+        </div>
+        <div class="slds-form-element slds-form-element_horizontal">
+            <label class="slds-form-element__label" for="horizontal-input-id-02">DATE and TIME</label>
+            <div class="slds-form-element__control">
+                <ui:inputDateTime aura:id="today" class="field"  displayDatePicker="true" value="{!v.CustomerPromoCodes.Date_and_Time__c}" />
+            </div>
+        </div>
+        <div class="slds-form-element slds-form-element_horizontal">
+            <label class="slds-form-element__label" for="horizontal-input-id-02">Coupon Type</label>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <ui:inputSelect  aura:id="couponTypeId" class="slds-select"  change="{!c.getCouponCode}" value="{!v.CustomerPromoCodes.Promo_Code_Type__c}"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-form-element slds-form-element_horizontal">
+            <label class="slds-form-element__label" for="horizontal-input-id-01">Display Promo Code</label>
+            <div class="slds-form-element__control">
+               <ui:inputText class="slds-input"  value="{!v.CustomerPromoCodes.Display_PromoCode__c}" disabled="true" />
+            </div>
+        </div>
+        <div class="slds-form-element slds-form-element_horizontal">
+            <label class="slds-form-element__label" for="horizontal-input-id-01">Promo Code Issued</label>
+            <div class="slds-form-element__control">
+               <ui:inputText  class="slds-input" value="{!v.CustomerPromoCodes.PromoCode_Issue__c}"  disabled="true"/>
+            </div>
+        </div>
+        <div class="slds-form-element slds-form-element_horizontal">
+            <br/><br/>
+            <center><button class="slds-button slds-button--brand" type="button" onclick="{!c.createCoupon}">Claim Code</button>
+                <button class="slds-button slds-button--brand" type="button">Exit</button></center>
+        </div>
+    </div>
+    
+    
+    <br/><br/>   
+    
+    
+    
+</aura:component>

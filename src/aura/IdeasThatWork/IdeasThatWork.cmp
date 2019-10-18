@@ -1,0 +1,352 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+   
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedValue" type="String" default="Red"/>
+    <aura:attribute name="myRecordId" type="String" description="Record to which the files should be attached" />
+    <aura:handler name="init" value="{!this}" action="{!c.loadOptions}" />
+    <ul class="slds-has-dividers--around-space">
+    <li class="slds-item">
+        <div class="slds-tile slds-tile--board">
+            
+            <div class="slds-page-header">
+                <div class="slds-grid">
+                    <div class="slds-col slds-has-flexi-truncate">
+                        <div class="slds-media slds-no-space slds-grow">
+                            <div class="slds-media__figure">
+                                <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/>
+                            </div>
+                            <div class="slds-media__body">
+                                
+                                <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Legal Term and Aggrements*</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+    <br/> 
+    <div class="slds-form-element">
+        <div class="slds-form-element__control">
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-2" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-2">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I am atleast 18 years old at the time of submission.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-3" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-3">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">To the best of my knowledge this is my original data.Which has not been
+                        copied or taken from anyone.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-4" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-4">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and certify that my idea submission does not/will not
+                        infringe upon any right of another person or entity.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-5" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-5">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I under stand and agree that i am submitting my idea to cashhart.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-6" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-6">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and agree the only protection i have for my idea in any 
+                        patient protection that exists at the time of this idea submittion.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-7" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-7">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and agree upon submission cashhart inclusive shall become
+                        the full and complete owner of my idea.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-8" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-8">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">cashhart inc. is not obligated to review develope or persue my idea.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-9">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-9">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <span class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                <label class="slds-checkbox__label" for="checkbox-9">
+                    <span class="slds-checkbox_faux"></span>
+                    <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                </label>
+            </span>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+    <br/>
+    <center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClick }" />
+        <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center>
+    <br/>
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:user" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Contact Information</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/> <br/>
+    <fieldset class="slds-form--compound">
+        
+        <div class="form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-01">First Name</label>
+                    <input id="input-01" class="slds-input" type="text" />
+                </div>
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-02">Last Name</label>
+                    <input id="input-02" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-06">Phone Number</label>
+                    <input id="input-06" class="slds-input" type="text" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="slds-form--compound">
+        <legend class="slds-form-element__label">Address</legend>
+        <div class="form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-1">
+                    <label class="slds-form-element__label" for="input-03">Street</label>
+                    <input id="input-03" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-04">City</label>
+                    <input id="input-04" class="slds-input" type="text" />
+                </div>
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-05">State</label>
+                    <input id="input-05" class="slds-input" type="text" />
+                </div>
+            </div>
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <label class="slds-form-element__label" for="input-06">ZIP Code</label>
+                    <input id="input-06" class="slds-input" type="text" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br/>
+    <center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClick }" />
+        <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center>
+    <br/>
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Idea Category</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/> 
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <lightning:select name="mySelect" label="Select a color:" aura:id="mySelect" value="{!v.selectedValue}">
+                <aura:iteration items="{!v.options}" var="item">
+                    <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Please give your idea using the text box below:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <fieldset class="slds-form-element">
+            <legend class="slds-form-element__legend slds-form-element__label">What kind of idea do you have?</legend>
+            <div class="slds-form-element__control">
+                <span class="slds-radio">
+                    <input type="radio" id="radio-3" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-3">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">New product of product improvement Idea.</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-4" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-4">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">Request to bring back discontinued product.</span>
+                    </label>
+                </span>
+                <span class="slds-radio">
+                    <input type="radio" id="radio-5" name="options" value="on" />
+                    <label class="slds-radio__label" for="radio-5">
+                        <span class="slds-radio_faux"></span>
+                        <span class="slds-form-element__label">Request to additional sizes on a current product.</span>
+                    </label>
+                </span>
+            </div>
+        </fieldset>
+    </div>
+    <br/><center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClick }" />
+    <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+    </center><br/>
+    <ul class="slds-has-dividers--around-space">
+        <li class="slds-item">
+            <div class="slds-tile slds-tile--board">
+                
+                <div class="slds-page-header">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-has-flexi-truncate">
+                            <div class="slds-media slds-no-space slds-grow">
+                                <div class="slds-media__figure">
+                                    <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                    <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/>
+                                </div>
+                                <div class="slds-media__body">
+                                    
+                                    <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="this should match the Record Title"><br/>Idea Title and Details</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Idea Title:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Tell about your idea in text box below:</label>
+            <div class="slds-form-element__control">
+                <textarea id="textarea-id-01" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Tell about your idea in text box below:</label>
+            <div class="slds-form-element__control">
+                <textarea id="textarea-id-01" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="slds-form-element__row">
+        <div class="slds-form-element slds-size--1-of-1">
+            <label class="slds-form-element__label" for="input-06">Idea Title:</label>
+            <input id="input-06" class="slds-input" type="text" />
+        </div>
+    </div>
+    <br/>
+    
+    <input type="file" class="slds-file-selector__input slds-assistive-text" accept="image/png" id="file-upload-input-01" aria-describedby="error-01" aria-labelledby="file-selector-primary-label file-selector-secondary-label" />
+   <!-- <lightning:fileUpload label="Attach receipt"
+        name="fileUploader" 
+        multiple="true" 
+        accept=".pdf,.png"
+        recordId="{!v.myRecordId}" 
+        onuploadfinished="{!c.handleUploadFinished}" /> -->
+   
+   
+</aura:component>

@@ -1,0 +1,128 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:registerEvent name="appEvent" type="c:SampleEvent"/> 
+    <div class="slds-m-around--x-large">
+        <div class="slds-tile slds-tile--board">
+            <div class="slds-page-header">
+                <div class="slds-grid"> 
+                    <div class="slds-col slds-has-flexi-truncate">
+                        <div class="slds-media slds-no-space slds-grow">
+                            <div class="slds-media__figure">
+                                <div class="slds-text-heading_large" data-aura-rendered-by="24:0">Legal Term and Aggrements*</div>
+                                <!--<lightning:buttonIcon iconName="utility:adduser" />-->
+                                <!--  <lightning:icon iconName="standard:topic" size="large" alternativeText="Indicates approval"/> -->
+                            </div>
+                            <div class="slds-media__body">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <br/> 
+        <div class="slds-form-element">
+            <div class="slds-form-element__control">
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-2" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-2">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I am atleast 18 years old at the time of submission.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-3" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-3">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">To the best of my knowledge this is my original data.Which has not been
+                            copied or taken from anyone.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-4" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-4">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and certify that my idea submission does not/will not
+                            infringe upon any right of another person or entity.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-5" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-5">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I under stand and agree that i am submitting my idea to cashhart.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-6" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-6">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and agree the only protection i have for my idea in any 
+                            patient protection that exists at the time of this idea submittion.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-7" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-7">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and agree upon submission cashhart inclusive shall become
+                            the full and complete owner of my idea.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-8" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-8">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">cashhart inc. is not obligated to review develope or persue my idea.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-9">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-9">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <span class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-9" value="on" />
+                    <label class="slds-checkbox__label" for="checkbox-9">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">I understand and agree that cashhart inc. is not required to and may not compensate me.</span>
+                    </label>
+                </span>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+        <br/>
+        <center><lightning:button variant="brand" label="Previous" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClickPrevious }" />
+            <lightning:button variant="brand" label="Next" iconName="utility:chevronright" iconPosition="left" onclick="{! c.handleClick }" />
+        </center>
+        <br/>
+    </div>
+</aura:component>

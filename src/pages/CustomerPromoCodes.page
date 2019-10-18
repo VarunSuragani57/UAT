@@ -1,0 +1,16 @@
+<apex:page >
+   <apex:includeLightning />
+   <div id="lightning" />
+    <script>
+        $Lightning.use("c:ClaimCodeApp", function() {
+            $Lightning.createComponent(
+                "c:ClaimCode",
+                {},
+                "thePromoCodes",
+                function(cmp) {
+                    console.log("Component created!");
+                    console.log(cmp);
+                });
+            });
+    </script>  
+</apex:page>

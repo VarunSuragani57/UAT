@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Comments</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Comments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Dislike --></label>
+        <name>Dislike__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ideas That Work --></label>
+        <name>Ideas_That_Work__c</name>
+        <relationshipLabel><!-- Internal Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Comments --></label>
+        <name>Internal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Like --></label>
+        <name>Like__c</name>
+    </fields>
+    <layouts>
+        <layout>Internal Comments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

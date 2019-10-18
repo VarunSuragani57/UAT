@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SAP Doc Flow types and configuration options for how to route them to specific documents</description>
+    <fields>
+        <fullName>ensxapp__Document_Category__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>SAP Document Category code</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The internal SAP document category code</inlineHelpText>
+        <label>Document Category</label>
+        <length>1</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Tab_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Tab in Salesforce that this document type redirects to when the record is clicked to view details</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab Name</label>
+        <length>100</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Tab_Namespace__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The namespace the Tab is in inside of Salesforce</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab Namespace</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Doc Flow Type Config</label>
+    <pluralLabel>SAP Doc Flow Type Configs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

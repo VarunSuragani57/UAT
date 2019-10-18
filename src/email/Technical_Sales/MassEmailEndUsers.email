@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+           <title>Carhartt FR News!</title>
+</head>
+<!-- Table used to center email -->
+<!-- Table used to set width of email -->
+            <table width="500" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr valign="top">
+    <td width="250" rowspan="2" valign="top"><A href=http://www.carhartt.com/webapp/wcs/stores/servlet/HomeView?langId=-1&storeId=10051&catalogId=10101"><img src="http://carharttimages.carhartt.com//is/image/Carhartt/email_slice1" alt="Carhartt logo" width="250" height="64" border="0" align="top"></A></td>
+    <td width="250" height="20" align="center" valign="middle" bordercolor="0" bgcolor="#352e26">
+      <a href="http://www.carhartt.com/webapp/wcs/stores/servlet/WhereToBuyView?langId=-1&storeId=10051&catalogId=10101"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#fdb73b">Find
+      a Retailer</FONT></a><font color="#fdb73b">  | <a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CarharttExpView?storeId=10051&catalogId=10101&langId=-1&nav=landing"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#fdb73b">Experience
+      Carhartt</FONT></a></font><BR>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="250" height="44" valign="top"><img src="http://carharttimages.carhartt.com//is/image/Carhartt/email_slice2" alt="background" width="250" height="44" border="0" align="top"></td>
+  </tr>
+<tr bgcolor="#484137">
+<td align="center" valign="top" colspan="2"><a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=15056"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="fdb73b"><STRONG>MEN'S</STRONG></FONT></A>&nbsp;&nbsp;
+<a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=15058"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="fdb73b"><STRONG>WOMEN'S</STRONG></FONT></A>&nbsp;&nbsp;<font color="fdb73b">
+<a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=10920"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="fdb73b"><STRONG>KIDS'</STRONG></FONT></A>&nbsp;</font>&nbsp;
+<a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=10915"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF"><STRONG><font color="fdb73b">FOOTWEAR</font></STRONG></FONT></A><font color="fdb73b">&nbsp;</font>&nbsp;
+<font color="fdb73b"><a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=10910"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="fdb73b"><STRONG>PERSONAL PROTECTIVE</STRONG></FONT></A>&nbsp;</font>&nbsp;
+<a href="http://www.carhartt.com/webapp/wcs/stores/servlet/CategoryDisplay?storeId=10051&catalogId=10101&langId=-1&categoryId=15606"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="fdb73b"><STRONG>COLLECTIONS</STRONG></FONT></A></td>
+</TR>
+<TR>
+<td colspan="2" bgcolor="#EEEEDD">
+<body bgcolor="#CCCC99">
+<table width="500" border="0" cellspacing="0" cellpadding="6">
+<tr>
+<td style="text-align:justify">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+Dear {!Contact.Name}, <br>
+<br>
+Carhartt is pleased to announce the introduction of several new Flame-Resistant products.  With flame-resistant clothing safety comes first, but comfort is a very close second so we’re adding three new lightweight pants, a lighter weight coverall, and a short sleeve T-shirt. We’re also pleased to announce our innovative new Flame-Resistant Lanyard-Access Jacket that’s specially designed for fall protection. It’s packed with features to include a flapped opening in the back of the jacket which provides a pass-through for a safety harness D-ring, and sleeves that cinch tight for a better fit under long gloves. Finally, for those customers who don’t require the extreme warmth of our existing outerwear, we’re rounding out our line by adding a mid-weight Active Jacket and a new All Seasons Bomber Jacket.    <br>
+<br>
+Attached you’ll find a brochure highlighting the features of our new Flame-Resistant products. Several of the new products, as pointed out in the brochure, are available to ship today, while the others will be available in January.  <br>
+<br>
+If you have any questions about any of these products or would like to set-up an appointment to review the line please don’t hesitate to contact me.  My e-mail and phone number are listed below.  <br>
+<br>
+Thank You for your continued support of the Carhartt Brand. <br>
+<br>
+Sincerely, <br>
+<br>
+{!Contact.OwnerFullName} <br>
+{!Contact.OwnerPhone} <br>
+{!Contact.OwnerEmail} <br>
+<br>
+</font>
+</td>
+</tr>
+
+</table>
+</body>
+
+</TD>
+
+</TR>
+<TR>
+<td align="center" colspan="2" bgcolor="#E0BD69"><BR><A href="http://www.carhartt.com"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><STRONG>www.carhartt.com</STRONG></FONT></A>
+<BR><A href="http://www.carharttfr.com"><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><STRONG>www.carharttfr.com</STRONG></FONT></A>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#CC6600">
+<BR><BR>To find a retailer, call 1-800-833-3118
+<BR><br><A href="http://www.facebook.com/pages/Carhartt/15118986338"><img src="http://carharttimages.carhartt.com//is/image/Carhartt/facebook" alt="Visit us on Facebook" width="67" height="20" border="0"> <A href="http://twitter.com/Carhartt"><img src="http://carharttimages.carhartt.com//is/image/Carhartt/twitter" alt="Visit us on Twitter" width="67" height="20" border="0"><A href="http://www.youtube.com/carharttsince1889"><img src="http://carharttimages.carhartt.com//is/image/Carhartt/youtubelogo" alt="Visit us on Youtube" width="38" height="20" border="0"></a>
+<br>
+</td></TR>
+                        <tr>
+                                    <td align="center" colspan="2" bgcolor="#E0BD69">
+                                    </td>
+                        </tr>
+</Table>
+</html>

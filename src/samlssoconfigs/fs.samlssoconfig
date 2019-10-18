@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decryptionCertificate>0P1C0000000Gv4p</decryptionCertificate>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>http://fs.carhartt.com/adfs/services/trust</issuer>
+    <loginUrl>https://fs.carhartt.com/adfs/ls/IdPInitiatedSignOn.aspx?LoginToRP=https://saml.salesforce.com</loginUrl>
+    <name>fs</name>
+    <oauthTokenEndpoint>https://carhartt--UAT1.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P1C0000000Gv4p</requestSigningCertId>
+    <salesforceLoginUrl>https://carhartt--UAT1.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://saml.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC2jCCAcKgAwIBAgIQU+OwmNxWv6hKPqRWJLC+6DANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDEx5BREZTIFNpZ25pbmcgLSBmcy5jYXJoYXJ0dC5jb20wHhcNMTcwNzIwMTU1ODIyWhcNMTgwNzIwMTU1ODIyWjApMScwJQYDVQQDEx5BREZTIFNpZ25pbmcgLSBmcy5jYXJoYXJ0dC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCyHKr9WqHPuUVRZz+WpF/o6HC+SRYglRjJPDwMyeR2EevGoztrK15jwsOc1aCTk28wzq9p7cUTrof9rkGh7DworP8gi660YDZQC1Ntv69gtQX/pK0NtqF/qGIaDAlvDzTmD9z8EpRy953Bw5wnimqBMTc4222I0aT32NLUpLLfZb/8pv0cSt16h9/TcV57xQegXED+XxN9dyGxdiF6G/mineyB+01VDRD5+lRDsCDSSi5S9Vs/7qSP3W2ZKPxG49m6sPCvJYSXpLS4A33apALzVrBpAtebsQBblVYjaUr9WFJrDCuTcjjr54czhbFfYaFBim5/ezVuqIjHkV2cIu8lAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFHJl49PFvAug0K1ie6igPNNkhq5cgRgjjO7C58/vVMlw484lhl5yDi+K52bjr10ACwsLswJMnAVjZIFX8a1GEGGfl9f5WWTRM3UVFZao+TgQjM207sc0ydxiGaIDEkByyaOg5DkTyBBsOTAN6qQvEp1/YV8aTMDPpQEgNHlKWfa6WncaO6I5oTBjx/Oyv0hzui1/MkjorRDxOfXou6KUluC/J1hKrt/3g4B4kW7chqjCeYHNZClqKyezNAJ8FMiT7KW08jlRLjq+37yKMl1xeOyXqU/+1Llep/Fn3RfPBaZ+sYBnjL0S6is7ijjgcgQQb4kJ8D+YhK+z29r+Y0ApFM=</validationCert>
+</SamlSsoConfig>

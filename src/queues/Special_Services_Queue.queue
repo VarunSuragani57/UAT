@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>special.services@ch.com.de</email>
+    <name>Special Services Queue</name>
+    <queueMembers>
+        <users>
+            <user>aharris@carhartt.com</user>
+            <user>apittenger@carhartt.com</user>
+            <user>bmercurio@carhartt.com</user>
+            <user>cjones@carhartt.com</user>
+            <user>jcummings@carhartt.com</user>
+            <user>kwolf@carhartt.com</user>
+            <user>rstriggles@carhartt.com</user>
+            <user>spanek@carhartt.com</user>
+            <user>sperez@carhartt.com</user>
+            <user>swronski@carhartt.com</user>
+            <user>tklukowski@carhartt.com</user>
+            <user>tflewelling@carhartt.com</user>
+            <user>vforgacs@carhartt.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

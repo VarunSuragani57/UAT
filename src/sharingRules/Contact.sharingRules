@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sales_Contacts</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares all contacts owned by sales team with service team. (Read Only).</description>
+        <label>Sales Contacts</label>
+        <sharedTo>
+            <roleAndSubordinates>Director_of_Customer_Engagement</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Leadership</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

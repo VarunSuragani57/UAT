@@ -1,0 +1,398 @@
+<apex:page controller="LeadGenerationController" applyHtmlTag="false"   cache="false" docType="html-5.0" showHeader="false"  lightningStylesheets="true" >
+    <apex:slds />
+    <apex:includeLightning />
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}" /> 
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" html-autocomplete="off">
+        <head>
+            <title>Cases</title>
+           <!-- <apex:stylesheet value="{!URLFOR($Resource.SLDS, 'styles.css')}"/> -->
+            
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/css/jquery.dataTables.min.css" />
+              <!--  <link href="/resource/1235794002000/SLDS" rel="stylesheet" type="text/css"/> -->
+                <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                        </head>
+                    <body class="slds-scope">
+                        <style type="text/css">
+                            .bPageBlock {
+                                border-top: 4px solid white;
+                            }         
+            .slds-scope h3 {
+                display: block !important;
+                width: 100%;
+            }
+            
+            .slds-scope .slds-input,
+                .slds-scope .slds-select {
+                    margin-bottom: 2rem;
+                }
+            
+            .slds-scope .slds-select {
+                padding-left: 0.5rem;
+            }
+            
+            .slds-scope .slds-form-element__label span {
+                color: red;
+                font-size: 1rem;
+                font-weight: 1000 rem;
+            }
+            
+            .slds-scope .slds-form-element__label {
+                display: inline-block;
+                color: #333;
+                font-size: 1rem;
+                font-weight: bolder;
+                line-height: 1.5;
+                margin-right: .75rem;
+                margin-bottom: .125rem;
+            }
+            
+            .slds-scope .grey {
+                background-color: #eee;
+            }
+            
+            .slds-scope .header {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .slds-scope .slds-icon {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+            .slds-scope .slds-section-title_divider, .slds-scope .slds-section-title--divider {
+                
+                background: #aeb8bf;
+            }
+            
+            .slds-scope .slds-section-title--divider {
+                font-size: 1rem;
+                line-height: 1;
+                color: #333;
+                text-transform: uppercase;
+                letter-spacing: .0625rem;
+                padding: .75rem 1rem;
+                background: #aeb8bf;
+            }
+            .slds-scope .slds-page-header {
+                background: #111;
+            }
+            
+            .slds-scope .slds-page-header__title {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1.25;
+                color: #fdb913;
+            }
+            .slds-scope button, .slds-scope input[type=button], .slds-scope input[type=reset], .slds-scope input[type=submit] {
+                background: #fdb913; 
+            }
+            </style>
+            <apex:form >
+                <div class="slds-page-header" role="banner">
+                    <div class="slds-media slds-media--center">
+                        <div class="slds-media__figure">
+                            </div>
+                        <div class="slds-media__body">
+                            <center> <p class="slds-page-header__title slds-truncate slds-align-middle" title="Rohde Corp - 80,000 Widgets">New Lead Generation for Carhartt</p>
+                                </center>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="slds-m-around--xx-large">
+                                <b><h3 class="slds-section-title--divider ">User informtation</h3></b>
+                          <div class="slds-grid slds-wrap slds-m-top_large">
+                             <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                 <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Lead Owner</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <input id="tags" class="slds-input"/>
+                                <apex:inputText Styleclass="slds-input" value="{!searchTerm}" id="tags11" style="display:none;" />
+                                <div   id="CreateNewClaimLineItem"></div>
+                                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+                                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                                <script>       
+                                $( function() {
+                                        $( "#tags" ).autocomplete({
+                                            source: function(request, response) {
+                                                Visualforce.remoting.Manager.invokeAction( '{!$RemoteAction.LeadGenerationController.getproductioncentercode}',
+                                                                                          
+                                                                                          request.term,
+                                                                                          function(result, event){
+                                                                                              if (event.status)
+                                                                                              {
+                                                                                                  console.log(result);
+                                                                                                  response(result);
+                                                                                              }
+                                                                                              else
+                                                                                              {
+                                                                                                  alert(event.message);
+                                                                                              }
+                                                                                          });
+                                                
+                                            },
+                                            appendTo : CreateNewClaimLineItem,
+                                            select:function( event, ui ){
+                                                // Call class method by passing this value using action function  
+                                                // console.log('====ui.item.label==='+ui.item.label);
+                                                // console.log('====event==='+event);
+                                                alert(ui.item.label);
+                                                document.getElementById('j_id0:j_id8:tags11').value =ui.item.label;
+                                                
+                                            }
+                                        });
+                                        
+                                    } );
+                                function replaceContent(ar){
+                                    var regEx = "&#39;";
+                                    var arr = [];
+                                    for(i=0;i<ar.length;i++){
+                                        var a = ar[i].replaceAll(regEx,"'");
+                                        console.log(a);
+                                        arr.push(a);
+                                    }
+                                    return arr;
+                                }
+                                String.prototype.replaceAll = function(search, replacement) {
+                                    var target = this;
+                                    return target.replace(new RegExp(search, 'g'), replacement);
+                                }; 
+                                </script>
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Name</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.FirstName}" />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Company</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Lead Record Type</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Company}" />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Lead Source</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.LastName}"  />
+                                </div>
+                              </div>
+                            </div>
+                                
+                                
+                                
+                       <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                          <div class="slds-grid slds-wrap">
+                                
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Lead Status</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                               <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Disqual Reason</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                              <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Phone</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                              <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Fax</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                              <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Email</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                         </div>
+                    </div>
+           </div>
+           
+           
+           
+           
+            <b><h3 class="slds-section-title--divider ">Distributor Profile</h3></b>
+                          <div class="slds-grid slds-wrap slds-m-top_large">
+                             <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Channel</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.FirstName}" />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Segment</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Geography</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                                    
+                                
+                              </div>
+                            </div>
+                                
+                                
+                                
+                       <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                          <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;"># of Sales Reps</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.LastName}"  />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Line of Credit</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                              <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Sales Avenues</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                               
+                         </div>
+                    </div>
+           </div>
+           
+           
+           
+           
+      <b><h3 class="slds-section-title--divider ">COMPETITIVE PROFILE</h3></b>
+                          <div class="slds-grid slds-wrap slds-m-top_large">
+                             <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Local Competitors</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.FirstName}" />
+                                </div>
+                                
+                                
+                              </div>
+                            </div>
+                                
+                                
+                                
+                       <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                          <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Brand Competitors</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.LastName}"  />
+                                </div>
+                               
+                               
+                         </div>
+                    </div>
+           </div>
+           
+
+
+
+
+     <b><h3 class="slds-section-title--divider ">ADDRESS</h3></b>
+                          <div class="slds-grid slds-wrap slds-m-top_large">
+                             <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                                <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">City</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.FirstName}" />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">State/Province</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                                    <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Country</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.Email}" />
+                                </div>
+                                
+                              </div>
+                            </div>
+                                
+                                
+                                
+                       <div class="slds-size_1-of-1 slds-medium-size_2-of-5">
+                          <div class="slds-grid slds-wrap">
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <b> <label class="slds-form-element__label" style="margin-left:20px;">Street</label>   </b>        
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.LastName}"  />
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Zip/Postal Code</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                               <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <label class="slds-form-element__label" style="margin-left:20px;">Website</label>          
+                                </div>
+                                <div class="slds-size_1-of-1 slds-medium-size_1-of-2">
+                                <apex:inputField Styleclass="slds-input" value="{!newLead.phone}" />
+                                </div>
+                         </div>
+                    </div>
+           </div>
+           
+
+
+
+
+           
+        </div>
+<br/>
+<center> 
+    <apex:commandButton value="Save" styleclass=".slds-button__icon_large" style="width:100px;" action="{!createLead}"/>
+    <!-- <apex:commandButton value="Save" styleclass="slds-button slds-button--brand slds-button--neutral slds-not-selected" style="width:100px;" action="{!createLead}"/> -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <apex:commandButton value="Cancel" styleclass=".slds-button__icon_large" style="width:100px;"/>
+</center>
+    <br/>
+    <br/>
+    </apex:form>      
+   </body>
+  </html>                  
+</apex:page>

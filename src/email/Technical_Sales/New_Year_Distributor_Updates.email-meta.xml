@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_FR_Letterhead</letterhead>
+    <name>2016 New Year Distributor Updates</name>
+    <style>freeForm</style>
+    <subject>Carhartt 2016 Updates</subject>
+    <textOnly>Happy 2016! I trust you are all off to a great start.
+
+
+Attached you will find an updated Industrial catalog along with our most current pricing. Please feel free to use the catalog for distribution within your company’s network as well as current and potential end user customers.
+
+I have a number of Carhartt updates for you to kick off 2016:
+
+1. Spring &amp; Fall 2016 Drops List along with FR replacement Styles (4 tabs total)
+
+o  Attached is the Fall 2016 Drops List that includes all styles or style colors that will be dropped this year
+
+o Understand, we may run short or heavy on that particular colors inventory and stock could disappear before spring/fall or go into the closeout list
+
+
+2. 2016 Catalogs (Available on direct.carhartt.com)
+
+o On the gold header, click “DOWNLOADS” and you will find the various catalogs/pricelists
+
+o Download Spring and Fall 2016, men’s and women’s full line catalogs, pricelist and UPS list
+
+o The 2016 Industrial and FR catalogs are now available on direct.carhartt.com electronically
+
+§ Printed versions are available now through Co-op
+
+(co-op@carhartt.com)
+
+
+*** The items showcased in this catalog reflect our top selling styles Carhartt inventories throughout the year.
+
+
+I know there is quite a bit of information here so please feel free to reach out to me with questions.  Remember, most major programs/catalogs/pricelists are up on direct.carhartt.com first but you are always welcome to email/call me as well.
+
+
+Best of luck to you all in 2016 and please don&apos;t hesitate to reach out to me to help support you &amp; your Carhartt FR sales!
+
+
+
+Kiera Zink
+
+
+Industrial Business Manager
+
+
+Rocky Mountain Region
+
+
+
+
+Cell: 303-515-0833
+
+
+Fax: 313-253-1947
+
+
+
+
+kzink@carhartt.com
+
+
+www.carharttfr.com
+
+
+
+
+Customer Service: 800-786-3916</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

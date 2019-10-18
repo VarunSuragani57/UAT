@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Doc Type Value --></label>
+        <name>ensxapp__Doc_Type_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Sales Doc Search Preset --></label>
+        <name>ensxapp__SAP_Sales_Doc_Search_Preset__c</name>
+        <relationshipLabel><!-- SAP Sales Doc Search Preset Doc Types --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

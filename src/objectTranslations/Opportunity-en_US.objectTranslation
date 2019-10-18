@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expected Revenue</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Next Step (DO NOT USE)</value>
+        </caseValues>
+        <name>next_step_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Prep --></label>
+        <name>Account_Prep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Shipping Address --></label>
+        <name>Account_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Amount --></label>
+        <name>Actual_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Investment --></label>
+        <name>Actual_Investment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Revenue --></label>
+        <name>Actual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Align Plan with Internal Teams --></label>
+        <name>Align_Plan_with_Internal_Teams__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Program --></label>
+        <name>Bid_Program__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business &amp; Product Review --></label>
+        <name>Business_Product_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Layer Bottoms</masterLabel>
+            <translation><!-- First Layer Bottoms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Layer Tops</masterLabel>
+            <translation><!-- First Layer Tops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Choice Program --></label>
+        <name>Choice_Program__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed/Lost Reason --></label>
+        <name>Closed_Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Customer Denied</masterLabel>
+            <translation><!-- Customer Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR and Non FR Styles Compatibility</masterLabel>
+            <translation><!-- FR and Non FR Styles Compatibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Denied</masterLabel>
+            <translation><!-- Finance Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inability to Fill Demand</masterLabel>
+            <translation><!-- Inability to Fill Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager Denied</masterLabel>
+            <translation><!-- Manager Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Specifications</masterLabel>
+            <translation><!-- Safety Specifications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Leadership Denied</masterLabel>
+            <translation><!-- Sales Leadership Denied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitive Notes --></label>
+        <name>Competitive_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conduct Meeting --></label>
+        <name>Conduct_Meeting__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date current contract expires --></help>
+        <label><!-- Current Contract Expires --></label>
+        <name>Contract_Expires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Original Plan --></label>
+        <name>Create_Original_Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Carhartt contract renewals, what is the approximate annual spend currently?  In the Opportunity Amount, enter any INCREMENTAL revenue, if any. --></help>
+        <label><!-- Current Annual Spend --></label>
+        <name>Current_Annual_Spend__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the customer&apos;s current supplier, if known. --></help>
+        <label><!-- Current Supplier --></label>
+        <name>Current_Supplier__c</name>
+        <picklistValues>
+            <masterLabel>Aramark</masterLabel>
+            <translation><!-- Aramark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulwark</masterLabel>
+            <translation><!-- Bulwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carhartt</masterLabel>
+            <translation><!-- Carhartt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cintas</masterLabel>
+            <translation><!-- Cintas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dakota</masterLabel>
+            <translation><!-- Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DriFire</masterLabel>
+            <translation><!-- DriFire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G&amp;K</masterLabel>
+            <translation><!-- G&amp;K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapco</masterLabel>
+            <translation><!-- Lapco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NSA</masterLabel>
+            <translation><!-- NSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (enter below)</masterLabel>
+            <translation><!-- Other (enter below) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rasco</masterLabel>
+            <translation><!-- Rasco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riverside</masterLabel>
+            <translation><!-- Riverside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tyndale</masterLabel>
+            <translation><!-- Tyndale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unifirst</masterLabel>
+            <translation><!-- Unifirst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walls</masterLabel>
+            <translation><!-- Walls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workrite</masterLabel>
+            <translation><!-- Workrite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrangler</masterLabel>
+            <translation><!-- Wrangler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currently using FR? --></label>
+        <name>Currently_using_FR__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DB Competitor --></label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deliver Customer Plan --></label>
+        <name>Deliver_Customer_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Deadline --></label>
+        <name>Deliverable_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Develop Seasonal Open to Buy w/ Account --></label>
+        <name>Develop_Seasonal_Open_to_Buy_Account__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Fitting Date --></label>
+        <name>Estimated_Fitting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Deadline --></label>
+        <name>Execution_Deadline__c</name>
+    </fields>
+    <fields>
+        <label><!-- FR --></label>
+        <name>FR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Review/Complete --></label>
+        <name>Final_Review_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Firm Order Commitments Complete --></label>
+        <name>Firm_Order_Commitments_Complete__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Future Order? --></label>
+        <name>Future_Order__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Geography --></label>
+        <name>Geography__c</name>
+    </fields>
+    <fields>
+        <label><!-- If others, please specify --></label>
+        <name>If_others_please_specify__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes mention brands --></label>
+        <name>If_yes_mention_brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes mention distributors --></label>
+        <name>If_yes_mention_distributors__c</name>
+    </fields>
+    <fields>
+        <label><!-- In-Season Performance Review --></label>
+        <name>In_Season_Performance_Review__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to identify the amount of investment that is required to capture the &apos;get&apos; - this should provide a return of at least 4:1 within the fist year --></help>
+        <label><!-- Investment --></label>
+        <name>Investment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select one or more decision criteria --></help>
+        <label><!-- Key Decision Criteria --></label>
+        <name>Key_Decision_Criteria__c</name>
+        <picklistValues>
+            <masterLabel>Country of Origin</masterLabel>
+            <translation><!-- Country of Origin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery/Lead Time</masterLabel>
+            <translation><!-- Delivery/Lead Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durability</masterLabel>
+            <translation><!-- Durability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political</masterLabel>
+            <translation><!-- Political --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Features</masterLabel>
+            <translation><!-- Safety Features --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unhappy w/ Current Contract</masterLabel>
+            <translation><!-- Unhappy w/ Current Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation><!-- Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MDF (Market Development Funding) --></label>
+        <name>MDF_Market_Development_Funding__c</name>
+        <picklistValues>
+            <masterLabel>Custom &quot;Spend to Get&quot; Promotion</masterLabel>
+            <translation><!-- Custom &quot;Spend to Get&quot; Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-commerce Updates</masterLabel>
+            <translation><!-- E-commerce Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GWP</masterLabel>
+            <translation><!-- GWP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Promo Support</masterLabel>
+            <translation><!-- National Promo Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor</masterLabel>
+            <translation><!-- Outdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Social</masterLabel>
+            <translation><!-- Paid Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Seeding</masterLabel>
+            <translation><!-- Product Seeding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Streaming Digital</masterLabel>
+            <translation><!-- Streaming Digital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+        <picklistValues>
+            <masterLabel>100234-051</masterLabel>
+            <translation><!-- 100234-051 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100234-410</masterLabel>
+            <translation><!-- 100234-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100235-051</masterLabel>
+            <translation><!-- 100235-051 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100235-250</masterLabel>
+            <translation><!-- 100235-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100235-410</masterLabel>
+            <translation><!-- 100235-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100235-465</masterLabel>
+            <translation><!-- 100235-465 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100237-051</masterLabel>
+            <translation><!-- 100237-051 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100237-250</masterLabel>
+            <translation><!-- 100237-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100237-410</masterLabel>
+            <translation><!-- 100237-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100237-465</masterLabel>
+            <translation><!-- 100237-465 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100410-001</masterLabel>
+            <translation><!-- 100410-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100410-026</masterLabel>
+            <translation><!-- 100410-026 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100410-034</masterLabel>
+            <translation><!-- 100410-034 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100410-316</masterLabel>
+            <translation><!-- 100410-316 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100410-412</masterLabel>
+            <translation><!-- 100410-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100432-001</masterLabel>
+            <translation><!-- 100432-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100432-201</masterLabel>
+            <translation><!-- 100432-201 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100432-316</masterLabel>
+            <translation><!-- 100432-316 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100493-323</masterLabel>
+            <translation><!-- 100493-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100493-824</masterLabel>
+            <translation><!-- 100493-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100494-323</masterLabel>
+            <translation><!-- 100494-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100494-824</masterLabel>
+            <translation><!-- 100494-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100495-323</masterLabel>
+            <translation><!-- 100495-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100495-824</masterLabel>
+            <translation><!-- 100495-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100496-323</masterLabel>
+            <translation><!-- 100496-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100496-824</masterLabel>
+            <translation><!-- 100496-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100499-323</masterLabel>
+            <translation><!-- 100499-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100501-323</masterLabel>
+            <translation><!-- 100501-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100501-824</masterLabel>
+            <translation><!-- 100501-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100503-323</masterLabel>
+            <translation><!-- 100503-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100503-824</masterLabel>
+            <translation><!-- 100503-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100615-001</masterLabel>
+            <translation><!-- 100615-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100615-472</masterLabel>
+            <translation><!-- 100615-472 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100632-001</masterLabel>
+            <translation><!-- 100632-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100632-024</masterLabel>
+            <translation><!-- 100632-024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100632-472</masterLabel>
+            <translation><!-- 100632-472 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100787-323</masterLabel>
+            <translation><!-- 100787-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100791-001</masterLabel>
+            <translation><!-- 100791-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100791-246</masterLabel>
+            <translation><!-- 100791-246 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100791-410</masterLabel>
+            <translation><!-- 100791-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100795-323</masterLabel>
+            <translation><!-- 100795-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100795-824</masterLabel>
+            <translation><!-- 100795-824 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101017-033</masterLabel>
+            <translation><!-- 101017-033 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101017-250</masterLabel>
+            <translation><!-- 101017-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101017-410</masterLabel>
+            <translation><!-- 101017-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101029-211</masterLabel>
+            <translation><!-- 101029-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101029-410</masterLabel>
+            <translation><!-- 101029-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101148-039</masterLabel>
+            <translation><!-- 101148-039 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101148-257</masterLabel>
+            <translation><!-- 101148-257 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101168-029</masterLabel>
+            <translation><!-- 101168-029 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101168-232</masterLabel>
+            <translation><!-- 101168-232 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101200-410</masterLabel>
+            <translation><!-- 101200-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101392-410</masterLabel>
+            <translation><!-- 101392-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101483-968</masterLabel>
+            <translation><!-- 101483-968 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101492-001</masterLabel>
+            <translation><!-- 101492-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101492-412</masterLabel>
+            <translation><!-- 101492-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101492-908</masterLabel>
+            <translation><!-- 101492-908 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101576-410</masterLabel>
+            <translation><!-- 101576-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101577-410</masterLabel>
+            <translation><!-- 101577-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101618-001</masterLabel>
+            <translation><!-- 101618-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101618-211</masterLabel>
+            <translation><!-- 101618-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101618-410</masterLabel>
+            <translation><!-- 101618-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101621-001</masterLabel>
+            <translation><!-- 101621-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101621-211</masterLabel>
+            <translation><!-- 101621-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101621-410</masterLabel>
+            <translation><!-- 101621-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101622-211</masterLabel>
+            <translation><!-- 101622-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101622-410</masterLabel>
+            <translation><!-- 101622-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101623-211</masterLabel>
+            <translation><!-- 101623-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101623-410</masterLabel>
+            <translation><!-- 101623-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101625-211</masterLabel>
+            <translation><!-- 101625-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101625-410</masterLabel>
+            <translation><!-- 101625-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101626-001</masterLabel>
+            <translation><!-- 101626-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101626-211</masterLabel>
+            <translation><!-- 101626-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101626-410</masterLabel>
+            <translation><!-- 101626-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101627-001</masterLabel>
+            <translation><!-- 101627-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101627-211</masterLabel>
+            <translation><!-- 101627-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101627-410</masterLabel>
+            <translation><!-- 101627-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101694-001</masterLabel>
+            <translation><!-- 101694-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101696-001</masterLabel>
+            <translation><!-- 101696-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101698-051</masterLabel>
+            <translation><!-- 101698-051 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101698-250</masterLabel>
+            <translation><!-- 101698-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101698-410</masterLabel>
+            <translation><!-- 101698-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101698-465</masterLabel>
+            <translation><!-- 101698-465 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>101814-972</masterLabel>
+            <translation><!-- 101814-972 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102080-011</masterLabel>
+            <translation><!-- 102080-011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102080-257</masterLabel>
+            <translation><!-- 102080-257 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102150-033</masterLabel>
+            <translation><!-- 102150-033 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102150-250</masterLabel>
+            <translation><!-- 102150-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102150-410</masterLabel>
+            <translation><!-- 102150-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102179-211</masterLabel>
+            <translation><!-- 102179-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102179-410</masterLabel>
+            <translation><!-- 102179-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102182-211</masterLabel>
+            <translation><!-- 102182-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102182-410</masterLabel>
+            <translation><!-- 102182-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102183-211</masterLabel>
+            <translation><!-- 102183-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102183-410</masterLabel>
+            <translation><!-- 102183-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102207-029</masterLabel>
+            <translation><!-- 102207-029 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102291-039</masterLabel>
+            <translation><!-- 102291-039 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102291-253</masterLabel>
+            <translation><!-- 102291-253 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102367-001</masterLabel>
+            <translation><!-- 102367-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102367-201</masterLabel>
+            <translation><!-- 102367-201 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102368-001</masterLabel>
+            <translation><!-- 102368-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102368-211</masterLabel>
+            <translation><!-- 102368-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102368-410</masterLabel>
+            <translation><!-- 102368-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102382-001</masterLabel>
+            <translation><!-- 102382-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102417-066</masterLabel>
+            <translation><!-- 102417-066 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102417-253</masterLabel>
+            <translation><!-- 102417-253 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102417-412</masterLabel>
+            <translation><!-- 102417-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102418-066</masterLabel>
+            <translation><!-- 102418-066 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102418-253</masterLabel>
+            <translation><!-- 102418-253 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102418-412</masterLabel>
+            <translation><!-- 102418-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102450-410</masterLabel>
+            <translation><!-- 102450-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102459-250</masterLabel>
+            <translation><!-- 102459-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102459-410</masterLabel>
+            <translation><!-- 102459-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102460-001</masterLabel>
+            <translation><!-- 102460-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102460-034</masterLabel>
+            <translation><!-- 102460-034 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102460-316</masterLabel>
+            <translation><!-- 102460-316 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102460-412</masterLabel>
+            <translation><!-- 102460-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102682-410</masterLabel>
+            <translation><!-- 102682-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102685-250</masterLabel>
+            <translation><!-- 102685-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102685-410</masterLabel>
+            <translation><!-- 102685-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102686-410</masterLabel>
+            <translation><!-- 102686-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102687-250</masterLabel>
+            <translation><!-- 102687-250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102687-410</masterLabel>
+            <translation><!-- 102687-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102687-465</masterLabel>
+            <translation><!-- 102687-465 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102688-417</masterLabel>
+            <translation><!-- 102688-417 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102689-264</masterLabel>
+            <translation><!-- 102689-264 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102689-410</masterLabel>
+            <translation><!-- 102689-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102691-211</masterLabel>
+            <translation><!-- 102691-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102691-410</masterLabel>
+            <translation><!-- 102691-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102692-211</masterLabel>
+            <translation><!-- 102692-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102692-410</masterLabel>
+            <translation><!-- 102692-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102694-211</masterLabel>
+            <translation><!-- 102694-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102694-410</masterLabel>
+            <translation><!-- 102694-410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102703-001</masterLabel>
+            <translation><!-- 102703-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102703-412</masterLabel>
+            <translation><!-- 102703-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102743-201</masterLabel>
+            <translation><!-- 102743-201 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102788-058</masterLabel>
+            <translation><!-- 102788-058 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102788-412</masterLabel>
+            <translation><!-- 102788-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102790-058</masterLabel>
+            <translation><!-- 102790-058 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102790-412</masterLabel>
+            <translation><!-- 102790-412 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102843-323</masterLabel>
+            <translation><!-- 102843-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>102905-323</masterLabel>
+            <translation><!-- 102905-323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A161-BLK</masterLabel>
+            <translation><!-- A161-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A161-BLM</masterLabel>
+            <translation><!-- A161-BLM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A161-BOG</masterLabel>
+            <translation><!-- A161-BOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A161-BRN</masterLabel>
+            <translation><!-- A161-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A161-CHH</masterLabel>
+            <translation><!-- A161-CHH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-BLK</masterLabel>
+            <translation><!-- A18-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-BLM</masterLabel>
+            <translation><!-- A18-BLM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-BOG</masterLabel>
+            <translation><!-- A18-BOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-BRN</masterLabel>
+            <translation><!-- A18-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-DKB</masterLabel>
+            <translation><!-- A18-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A18-NVY</masterLabel>
+            <translation><!-- A18-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A202-BLK</masterLabel>
+            <translation><!-- A202-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A202-CHH</masterLabel>
+            <translation><!-- A202-CHH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A202-DKB</masterLabel>
+            <translation><!-- A202-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A267-BLK</masterLabel>
+            <translation><!-- A267-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A267-BLM</masterLabel>
+            <translation><!-- A267-BLM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A267-BOG</masterLabel>
+            <translation><!-- A267-BOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A267-NVY</masterLabel>
+            <translation><!-- A267-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B11-BLK</masterLabel>
+            <translation><!-- B11-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B11-DES</masterLabel>
+            <translation><!-- B11-DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B11-MDT</masterLabel>
+            <translation><!-- B11-MDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B13-DPS</masterLabel>
+            <translation><!-- B13-DPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B13-DST</masterLabel>
+            <translation><!-- B13-DST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B136-BLK</masterLabel>
+            <translation><!-- B136-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B147-BLK</masterLabel>
+            <translation><!-- B147-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B147-NVY</masterLabel>
+            <translation><!-- B147-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B147-TAN</masterLabel>
+            <translation><!-- B147-TAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B151-BLK</masterLabel>
+            <translation><!-- B151-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B151-CHR</masterLabel>
+            <translation><!-- B151-CHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B151-GKH</masterLabel>
+            <translation><!-- B151-GKH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B151-NVY</masterLabel>
+            <translation><!-- B151-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B151-TAN</masterLabel>
+            <translation><!-- B151-TAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B17-DST</masterLabel>
+            <translation><!-- B17-DST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B17-STW</masterLabel>
+            <translation><!-- B17-STW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B216-001</masterLabel>
+            <translation><!-- B216-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C003-BLK</masterLabel>
+            <translation><!-- C003-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C003-BRN</masterLabel>
+            <translation><!-- C003-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C003-DNY</masterLabel>
+            <translation><!-- C003-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C61-BLK</masterLabel>
+            <translation><!-- C61-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C61-DKB</masterLabel>
+            <translation><!-- C61-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA002-BRN</masterLabel>
+            <translation><!-- FRA002-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA002-DNY</masterLabel>
+            <translation><!-- FRA002-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA265-BLK</masterLabel>
+            <translation><!-- FRA265-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA265-BRN</masterLabel>
+            <translation><!-- FRA265-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA265-DNY</masterLabel>
+            <translation><!-- FRA265-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRA265-RYL</masterLabel>
+            <translation><!-- FRA265-RYL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB004-MDS</masterLabel>
+            <translation><!-- FRB004-MDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB100-DNM</masterLabel>
+            <translation><!-- FRB100-DNM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB13-401</masterLabel>
+            <translation><!-- FRB13-401 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB13-DNM</masterLabel>
+            <translation><!-- FRB13-DNM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB159-DNY</masterLabel>
+            <translation><!-- FRB159-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB159-GKH</masterLabel>
+            <translation><!-- FRB159-GKH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB159-MOS</masterLabel>
+            <translation><!-- FRB159-MOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB240-BLK</masterLabel>
+            <translation><!-- FRB240-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB240-DNY</masterLabel>
+            <translation><!-- FRB240-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRB240-GKH</masterLabel>
+            <translation><!-- FRB240-GKH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-465</masterLabel>
+            <translation><!-- FRS003-465 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-629</masterLabel>
+            <translation><!-- FRS003-629 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-DNY</masterLabel>
+            <translation><!-- FRS003-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-GRY</masterLabel>
+            <translation><!-- FRS003-GRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-KHI</masterLabel>
+            <translation><!-- FRS003-KHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS003-RYL</masterLabel>
+            <translation><!-- FRS003-RYL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS160-608</masterLabel>
+            <translation><!-- FRS160-608 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS160-DNY</masterLabel>
+            <translation><!-- FRS160-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS160-GRY</masterLabel>
+            <translation><!-- FRS160-GRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS160-KHI</masterLabel>
+            <translation><!-- FRS160-KHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRS160-MBL</masterLabel>
+            <translation><!-- FRS160-MBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J001-BLK</masterLabel>
+            <translation><!-- J001-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J001-BRN</masterLabel>
+            <translation><!-- J001-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J130-211</masterLabel>
+            <translation><!-- J130-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J130-BLK</masterLabel>
+            <translation><!-- J130-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J130-MDT</masterLabel>
+            <translation><!-- J130-MDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J131-BLK</masterLabel>
+            <translation><!-- J131-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J131-BRN</masterLabel>
+            <translation><!-- J131-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J131-DNY</masterLabel>
+            <translation><!-- J131-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J140-BLK</masterLabel>
+            <translation><!-- J140-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J140-BRN</masterLabel>
+            <translation><!-- J140-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J140-DNY</masterLabel>
+            <translation><!-- J140-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J162-001</masterLabel>
+            <translation><!-- J162-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K121-472</masterLabel>
+            <translation><!-- K121-472 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K121-BLK</masterLabel>
+            <translation><!-- K121-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K122-472</masterLabel>
+            <translation><!-- K122-472 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K122-BLK</masterLabel>
+            <translation><!-- K122-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K126-BLK</masterLabel>
+            <translation><!-- K126-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K126-BLS</masterLabel>
+            <translation><!-- K126-BLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K126-CHR</masterLabel>
+            <translation><!-- K126-CHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K126-HGY</masterLabel>
+            <translation><!-- K126-HGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K126-NVY</masterLabel>
+            <translation><!-- K126-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K128-BLK</masterLabel>
+            <translation><!-- K128-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K128-BLS</masterLabel>
+            <translation><!-- K128-BLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K128-HGY</masterLabel>
+            <translation><!-- K128-HGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K128-HTG</masterLabel>
+            <translation><!-- K128-HTG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K128-NVY</masterLabel>
+            <translation><!-- K128-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K570-BLK</masterLabel>
+            <translation><!-- K570-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K570-HGY</masterLabel>
+            <translation><!-- K570-HGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K570-MOS</masterLabel>
+            <translation><!-- K570-MOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K570-NVY</masterLabel>
+            <translation><!-- K570-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K570-RED</masterLabel>
+            <translation><!-- K570-RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-026</masterLabel>
+            <translation><!-- K84-026 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-BLK</masterLabel>
+            <translation><!-- K84-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-BLS</masterLabel>
+            <translation><!-- K84-BLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-DES</masterLabel>
+            <translation><!-- K84-DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-HGY</masterLabel>
+            <translation><!-- K84-HGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-HTG</masterLabel>
+            <translation><!-- K84-HTG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K84-NVY</masterLabel>
+            <translation><!-- K84-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-600</masterLabel>
+            <translation><!-- K87-600 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-BLK</masterLabel>
+            <translation><!-- K87-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-BLS</masterLabel>
+            <translation><!-- K87-BLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-CHR</masterLabel>
+            <translation><!-- K87-CHR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-DES</masterLabel>
+            <translation><!-- K87-DES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-HGY</masterLabel>
+            <translation><!-- K87-HGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-HTG</masterLabel>
+            <translation><!-- K87-HTG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K87-NVY</masterLabel>
+            <translation><!-- K87-NVY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R01-BLK</masterLabel>
+            <translation><!-- R01-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R01-BRN</masterLabel>
+            <translation><!-- R01-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R01-DNY</masterLabel>
+            <translation><!-- R01-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R27-211</masterLabel>
+            <translation><!-- R27-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R27-BLK</masterLabel>
+            <translation><!-- R27-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R41-BLK</masterLabel>
+            <translation><!-- R41-BLK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R41-BRN</masterLabel>
+            <translation><!-- R41-BRN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R41-DNY</masterLabel>
+            <translation><!-- R41-DNY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V33-211</masterLabel>
+            <translation><!-- V33-211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V33-DKB</masterLabel>
+            <translation><!-- V33-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA018-WWH</masterLabel>
+            <translation><!-- WA018-WWH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WJ130-DKB</masterLabel>
+            <translation><!-- WJ130-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV001-DKB</masterLabel>
+            <translation><!-- WV001-DKB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>k126-HTG</masterLabel>
+            <translation><!-- k126-HTG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merchandising --></label>
+        <name>Merchandising__c</name>
+        <picklistValues>
+            <masterLabel>Bottoms Reset</masterLabel>
+            <translation><!-- Bottoms Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Traffic/High Impressions</masterLabel>
+            <translation><!-- High Traffic/High Impressions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Door</masterLabel>
+            <translation><!-- New Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date new contract will end, whether for Carhartt or a competitor - this will be copied back to the Account after Closed Won or Closed Lost. --></help>
+        <label><!-- New Contract End Date --></label>
+        <name>New_Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter date of update and next step(s) --></help>
+        <label><!-- Next step --></label>
+        <name>Next_step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-FR --></label>
+        <name>Non_FR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of employees that will be outfitted with FR --></help>
+        <label><!-- # of Employees to Outfit --></label>
+        <name>Num_Employees_to_Outfit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Wearers --></label>
+        <name>Number_of_Wearers__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Hold Reason --></label>
+        <name>On_Hold_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type (From Prospect) --></label>
+        <name>Opportunity_Type_From_Prospect__c</name>
+    </fields>
+    <fields>
+        <help><!-- If competitor is not on list, enter the name(s) here. --></help>
+        <label><!-- Other Competitor(s) --></label>
+        <name>Other_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partnership Meeting --></label>
+        <name>Partnership_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Season Review --></label>
+        <name>Post_Season_Review__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the primary competitor for this deal. --></help>
+        <label><!-- Primary Competitor --></label>
+        <name>Primary_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Aramark</masterLabel>
+            <translation><!-- Aramark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulwark</masterLabel>
+            <translation><!-- Bulwark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cintas</masterLabel>
+            <translation><!-- Cintas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dakota</masterLabel>
+            <translation><!-- Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DriFire</masterLabel>
+            <translation><!-- DriFire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G&amp;K</masterLabel>
+            <translation><!-- G&amp;K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapco</masterLabel>
+            <translation><!-- Lapco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NSA</masterLabel>
+            <translation><!-- NSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (enter below)</masterLabel>
+            <translation><!-- Other (enter below) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rasco</masterLabel>
+            <translation><!-- Rasco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riverside</masterLabel>
+            <translation><!-- Riverside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tyndale</masterLabel>
+            <translation><!-- Tyndale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unifirst</masterLabel>
+            <translation><!-- Unifirst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walls</masterLabel>
+            <translation><!-- Walls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workrite</masterLabel>
+            <translation><!-- Workrite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrangler</masterLabel>
+            <translation><!-- Wrangler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select one or more products --></help>
+        <label><!-- Product Interest --></label>
+        <name>Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bibs &amp; Coveralls</masterLabel>
+            <translation><!-- Bibs &amp; Coveralls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pants</masterLabel>
+            <translation><!-- Pants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shirts</masterLabel>
+            <translation><!-- Shirts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Launch Date --></label>
+        <name>Program_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to identify the amount of investment that is required to capture the &apos;get&apos; - this should provide a return of at least 4:1 within the first year --></help>
+        <label><!-- Proposed Investment --></label>
+        <name>Proposed_Investment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select primary reason for buying FR --></help>
+        <label><!-- Reason for Buying --></label>
+        <name>Reason_for_Buying__c</name>
+        <picklistValues>
+            <masterLabel>Contract Renewal</masterLabel>
+            <translation><!-- Contract Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Employees</masterLabel>
+            <translation><!-- New Employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restock</masterLabel>
+            <translation><!-- Restock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Change</masterLabel>
+            <translation><!-- Safety Change --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Appointment --></label>
+        <name>Scheduled_Appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Season --></label>
+        <name>Season__c</name>
+        <picklistValues>
+            <masterLabel>Fall</masterLabel>
+            <translation><!-- Fall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stipend --></label>
+        <name>Stipend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Style Information Details --></label>
+        <name>Style_Information_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- in months --></help>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning --></label>
+        <name>Territory_Planning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Industry/Market --></label>
+        <name>Type_of_Industry_Market__c</name>
+        <picklistValues>
+            <masterLabel>Home Services</masterLabel>
+            <translation><!-- Home Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mining</masterLabel>
+            <translation><!-- Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil &amp; Gas</masterLabel>
+            <translation><!-- Oil &amp; Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petrochemical</masterLabel>
+            <translation><!-- Petrochemical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uniform</masterLabel>
+            <translation><!-- Uniform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Annual</layout>
+        <sections>
+            <label><!-- Annual Opportunity Details --></label>
+            <section>Annual Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Give/Get</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Give/Get Actions --></label>
+            <section>Give/Get Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Industrial</layout>
+        <sections>
+            <label><!-- Annual Opportunity Details --></label>
+            <section>Annual Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Industrial End User Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Details --></label>
+            <section>Opportunity Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Planning Cycle</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Non-Planning Actions --></label>
+            <section>Non-Planning Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Planning Cycle</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Planning Opportunity Actions --></label>
+            <section>Planning Opportunity Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Retail Marketing</layout>
+        <sections>
+            <label><!-- Annual Opportunity Details --></label>
+            <section>Annual Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Select Category --></label>
+        <name>Select_Category</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Industrial Accounts sales cycle --></description>
+        <label><!-- Annual --></label>
+        <name>Annual</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Promotional sales cycle --></description>
+        <label><!-- Give/Get --></label>
+        <name>Give_Get</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Industrial --></label>
+        <name>Industrial</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Seasonal process for trade accounts --></description>
+        <label><!-- Non-Planning Cycle --></label>
+        <name>Non_Planning_Cycle</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Planning process for strategic accounts --></description>
+        <label><!-- Planning Cycle --></label>
+        <name>Planning_Cycle</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- MDF or Merchandising for Trade Accounts --></description>
+        <label><!-- Retail Marketing --></label>
+        <name>Retail_Marketing</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Account_Prep</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a value in order to close this opportunity. --></errorMessage>
+        <name>Actual_Investment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a value in order to close this opportunity. --></errorMessage>
+        <name>Actual_Revenue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Align_Plan_with_Internal_Teams</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Business_Product_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Close date cannot be in the past --></errorMessage>
+        <name>Close_Date_in_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Primary Competitor and Key Decision Criteria prior to closing the opportunity. --></errorMessage>
+        <name>Closed_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Conduct_Meeting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Create_Original_Plan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Deliver_Customer_Plan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Firm_Order_Commitments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>In_Season_Performance_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Partnership_Meeting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Post_Season_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Scheduled_Appointment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Seasonal_Open_to_Buy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must mark this task complete before advancing to the next stage. --></errorMessage>
+        <name>Territory_Planning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill the filed if you select others in Type of Industry/Market. --></errorMessage>
+        <name>Type_Of_Market_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Wear_Test_Order --></label>
+        <name>Wear_Test_Order</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TransactionItem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TransactionItems</value>
+    </caseValues>
+    <fields>
+        <label><!-- BasketSavingsAmount --></label>
+        <name>BasketSavingsAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Receipts Number --></label>
+        <name>E_Receipts_Number__c</name>
+        <relationshipLabel><!-- TransactionItems --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- PromoSavingsAmount --></label>
+        <name>PromoSavingsAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Amount Value --></label>
+        <name>Promotions_Amount_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions CouponCode --></label>
+        <name>Promotions_CouponCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Description --></label>
+        <name>Promotions_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Name --></label>
+        <name>Promotions_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Private Name --></label>
+        <name>Promotions_Private_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Promo Id --></label>
+        <name>Promotions_Promo_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotions Promo Type --></label>
+        <name>Promotions_Promo_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate DisplayCode --></label>
+        <name>TaxRate_DisplayCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate Id --></label>
+        <name>TaxRate_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate Indicator --></label>
+        <name>TaxRate_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate Percentage --></label>
+        <name>TaxRate_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate TaxAmount --></label>
+        <name>TaxRate_TaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate TotalAddOnVAT --></label>
+        <name>TaxRate_TotalAddOnVAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRate TotalVAT --></label>
+        <name>TaxRate_TotalVAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRates Description --></label>
+        <name>TaxRates_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRates IsVAT --></label>
+        <name>TaxRates_IsVAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRates TaxExempt --></label>
+        <name>TaxRates_TaxExempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- TaxRates --></label>
+        <name>TaxRates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Amount --></label>
+        <name>Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Barcode --></label>
+        <name>Transaction_Barcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Description --></label>
+        <name>Transaction_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction DiscountAmountTotal --></label>
+        <name>Transaction_DiscountAmountTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction DiscountPercentage --></label>
+        <name>Transaction_DiscountPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction DiscountType --></label>
+        <name>Transaction_DiscountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction DiscountValue --></label>
+        <name>Transaction_DiscountValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ItemName --></label>
+        <name>Transaction_ItemName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ProductType --></label>
+        <name>Transaction_ProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Quantity --></label>
+        <name>Transaction_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ReasonCodeDescription --></label>
+        <name>Transaction_ReasonCodeDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ReferenceItemIdx --></label>
+        <name>Transaction_ReferenceItemIdx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Sku --></label>
+        <name>Transaction_Sku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction TotalValue --></label>
+        <name>Transaction_TotalValue__c</name>
+    </fields>
+    <layouts>
+        <layout>TransactionItem Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discounts &amp; Promotions --></label>
+            <section>Discounts &amp; Promotions</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Hi {!Lead.FirstName},<br><br>Per our conversation this morning, I have attached the prospect form and credit application to this email.&nbsp; Please fill those out at your convenience and return to me along w/ a copy of your sales tax certificate and 2 pictures of your store.&nbsp; I will pass that along to the sales rep and have him or her contact you.&nbsp; Please let me know if you need any more information or have any other questions. <br>&nbsp;<br>Thank you for your interest in Carhartt!<br><br>Regards,<br><br>{!User.Name}<br>{!User.Phone}<br>{!User.Email}<br><br><br><br><br>]]></td>
+</tr>
+</table>

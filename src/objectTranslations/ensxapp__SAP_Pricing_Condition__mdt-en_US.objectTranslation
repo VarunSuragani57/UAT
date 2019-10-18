@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Input Condition --></label>
+        <name>ensxapp__Input_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Condition --></label>
+        <name>ensxapp__Output_Condition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this to map this condition to a single static type for the condition code. --></help>
+        <label><!-- SAP Condition Code --></label>
+        <name>ensxapp__SAP_Condition_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Condition Type --></label>
+        <name>ensxapp__SAP_Condition_Type__c</name>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation><!-- Header --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item</masterLabel>
+            <translation><!-- Item --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Pricing --></label>
+        <name>ensxapp__SAP_Pricing__c</name>
+        <relationshipLabel><!-- SAP Pricing Conditions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Field --></label>
+        <name>ensxapp__Salesforce_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this if you&apos;re going to map the condition code for this to a field on an sObject --></help>
+        <label><!-- Salesforce Object --></label>
+        <name>ensxapp__Salesforce_Object__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- A condition must be an input, an output, or both. Please make a selection of &quot;Input&quot; or &quot;Output&quot;. --></errorMessage>
+        <name>ensxapp__Condition_Must_Be_Input_And_Or_Output</name>
+    </validationRules>
+</CustomObjectTranslation>

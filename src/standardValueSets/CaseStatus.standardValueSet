@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>false</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Brand Integrity Reviewed</fullName>
+        <default>false</default>
+        <label>Brand Integrity Reviewed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Leadership Reviewed</fullName>
+        <default>false</default>
+        <label>Leadership Reviewed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending – Escalated</fullName>
+        <default>false</default>
+        <label>Pending – Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Review Accept</fullName>
+        <default>false</default>
+        <label>Review Accept</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Review Reject</fullName>
+        <default>false</default>
+        <label>Review Reject</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Final Review</fullName>
+        <default>false</default>
+        <label>Final Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed – Violation</fullName>
+        <default>false</default>
+        <label>Closed – Violation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed – Withdrawn</fullName>
+        <default>false</default>
+        <label>Closed – Withdrawn</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

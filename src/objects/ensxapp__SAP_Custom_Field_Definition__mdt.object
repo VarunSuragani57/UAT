@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A custom field specific to a SAP component</description>
+    <fields>
+        <fullName>ensxapp__Column_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This indicates the order in which columns will be displayed</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This indicates the order in which columns will be displayed</inlineHelpText>
+        <label>Column Order</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Custom_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If multilingual support is required, use this to insert the fullName value of the Custom Label to be used for the column value</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If multilingual support is required, use this to insert the fullName value of the Custom Label to be used for the column value</inlineHelpText>
+        <label>Custom Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field Name</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This is the default label value that will be used for Column or Label name</inlineHelpText>
+        <label>Default Label</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Component_Custom_Field_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the component this field definition will be linked to</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This is the component this field definition will be linked to</inlineHelpText>
+        <label>SAP Custom Field Definition</label>
+        <referenceTo>ensxapp__SAP_Component_Custom_Field_Group__mdt</referenceTo>
+        <relationshipLabel>SAP Custom Field Definition Parameters</relationshipLabel>
+        <relationshipName>SAP_Custom_Field_Definition_Parameters</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the custom field as listed in SAP</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the custom field as listed in SAP</inlineHelpText>
+        <label>SAP Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Custom Field Definition</label>
+    <pluralLabel>SAP Custom Field Definition</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

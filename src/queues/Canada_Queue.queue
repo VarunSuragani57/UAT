@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>canada.queue@ch.com.de</email>
+    <name>Canada Queue</name>
+    <queueMembers>
+        <users>
+            <user>aharris@carhartt.com</user>
+            <user>dduprey@carhartt.com</user>
+            <user>jcummings@carhartt.com</user>
+            <user>jlaframboise@carhartt.com</user>
+            <user>rmboutchouang@carhartt.com</user>
+            <user>sperez@carhartt.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

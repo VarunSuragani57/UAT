@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is for lead upload tab where we can upload leads into excel</description>
+    <label>Lead Upload</label>
+    <motif>Custom2: Fan</motif>
+    <page>LeadUploadPage</page>
+</CustomTab>

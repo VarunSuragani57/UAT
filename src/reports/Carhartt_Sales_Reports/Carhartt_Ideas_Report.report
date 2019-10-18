@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.Any_professional_or_personal_abt_idea_25__c</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.Are_there_other_brands_currently_20__c</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.First_Name__c</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.Last_Name__c</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.State__c</field>
+    </columns>
+    <columns>
+        <field>Ideas_That_Work__c.Email__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Carhartt Ideas Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Ideas_That_Work__c$Internal_Comments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CHILD_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

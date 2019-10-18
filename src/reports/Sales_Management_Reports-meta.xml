@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Sales Management Reports</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Canada_Sales_Manager</role>
+        <role>Department_Store_Manager</role>
+        <role>Director_Industrial_Sales</role>
+        <role>Discount_Sales_Manager</role>
+        <role>East_Manager</role>
+        <role>Farm_Ranch_Manager</role>
+        <role>Inside_Sales_Manager</role>
+        <role>Midwest_Manager</role>
+        <role>Sales_Leadership</role>
+        <role>South_Manager</role>
+        <role>Sporting_Goods_Outerwear_Manager</role>
+        <role>VP_Regional_Accounts</role>
+        <role>VP_Strategic_Accounts</role>
+        <role>West_Manager</role>
+        <role>Wholesales_Manager</role>
+    </sharedTo>
+</ReportFolder>

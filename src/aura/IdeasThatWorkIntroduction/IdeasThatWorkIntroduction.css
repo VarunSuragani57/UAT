@@ -1,0 +1,10 @@
+.THIS.child {
+  width: 80%;
+  border: 1px solid black;
+  margin-left:5%;
+    margin-right:5%;
+}
+
+.THIS.slds-scope .slds-text-heading_small {
+        font-size: 14pt;
+}

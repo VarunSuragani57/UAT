@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer E-Receipts</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer E-Receipts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Barcode --></label>
+        <name>Barcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- BusinessCheck Amount --></label>
+        <name>BusinessCheck_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Amount --></label>
+        <name>Cash_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Type --></label>
+        <name>Cash_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashier userFirstName --></label>
+        <name>Cashier_userFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashier userId --></label>
+        <name>Cashier_userId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User LastName --></label>
+        <name>Cashier_userLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cashier userName --></label>
+        <name>Cashier_userName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Amount --></label>
+        <name>Change_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Amount --></label>
+        <name>Check_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard AmountApproved --></label>
+        <name>CreditCard_AmountApproved__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard AuthCode --></label>
+        <name>CreditCard_AuthCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard AuthToken --></label>
+        <name>CreditCard_AuthToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard CardToken --></label>
+        <name>CreditCard_CardToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard Description --></label>
+        <name>CreditCard_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard EftTransactionTimestamp --></label>
+        <name>CreditCard_EftTransactionTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard EntryMode --></label>
+        <name>CreditCard_EntryMode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard ExpiratyDate --></label>
+        <name>CreditCard_ExpiratyDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard MaskedCardNumber --></label>
+        <name>CreditCard_MaskedCardNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard MerchantID --></label>
+        <name>CreditCard_MerchantID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard TenderType --></label>
+        <name>CreditCard_TenderType__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard TerminalID --></label>
+        <name>CreditCard_TerminalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard TotalAmountTransacted --></label>
+        <name>CreditCard_TotalAmountTransacted__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard TransactionID --></label>
+        <name>CreditCard_TransactionID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditCard Type --></label>
+        <name>CreditCard_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- CurrencyId --></label>
+        <name>CurrencyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerAddress --></label>
+        <name>CustomerAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerCity --></label>
+        <name>CustomerCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerEmail --></label>
+        <name>CustomerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerFirstName --></label>
+        <name>CustomerFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerHomePhoneNumber --></label>
+        <name>CustomerHomePhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerLastName --></label>
+        <name>CustomerLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerMobilePhoneNumber --></label>
+        <name>CustomerMobilePhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerState --></label>
+        <name>CustomerState__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerWorkPhoneNumber --></label>
+        <name>CustomerWorkPhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerZipCode --></label>
+        <name>CustomerZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- DeviceId --></label>
+        <name>DeviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- DiscountTotal --></label>
+        <name>DiscountTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- GiftCard Amount --></label>
+        <name>GiftCard_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- GiftCard Type --></label>
+        <name>GiftCard_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- GiftCertificate Amount --></label>
+        <name>GiftCertificate_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- LoyaltyPoints --></label>
+        <name>LoyaltyPoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Address --></label>
+        <name>Loyalty_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Email --></label>
+        <name>Loyalty_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty FirstName --></label>
+        <name>Loyalty_FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty LastName --></label>
+        <name>Loyalty_LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty MobilePhoneNumber --></label>
+        <name>Loyalty_MobilePhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Type --></label>
+        <name>Loyalty_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- MerchTotal --></label>
+        <name>MerchTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- MoneyOrder Amount --></label>
+        <name>MoneyOrder_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PromoTotal --></label>
+        <name>PromoTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Name --></label>
+        <name>Promotion_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalespersonId --></label>
+        <name>SalespersonId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson Name --></label>
+        <name>Salesperson_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendData --></label>
+        <name>SendData__c</name>
+    </fields>
+    <fields>
+        <label><!-- SpecialPayment Amount --></label>
+        <name>SpecialPayment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SpecialPayment Reason --></label>
+        <name>SpecialPayment_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- StoreId --></label>
+        <name>StoreId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store City --></label>
+        <name>Store_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Country --></label>
+        <name>Store_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store FaxNumber --></label>
+        <name>Store_FaxNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Name --></label>
+        <name>Store_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store PhoneNumber --></label>
+        <name>Store_PhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store TimeZone --></label>
+        <name>Store_TimeZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store ZipCode --></label>
+        <name>Store_ZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Name --></label>
+        <name>Street_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt Info --></label>
+        <name>Tax_Exempt_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Percentage --></label>
+        <name>Tax_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Till Id --></label>
+        <name>Till_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalAmount --></label>
+        <name>TotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalTaxValue --></label>
+        <name>TotalTaxValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Items --></label>
+        <name>Total_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Refund Items --></label>
+        <name>Total_Refund_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- TransactionId --></label>
+        <name>TransactionId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount defines the total price or amount customer owes the business. --></help>
+        <label><!-- TravelersCheck Amount --></label>
+        <name>TravelersCheck_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- localTimeZone --></label>
+        <name>localTimeZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- localTranDate --></label>
+        <name>localTranDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- loyaltyId --></label>
+        <name>loyaltyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- NonLoyaltyEmail --></label>
+        <name>nonLoyaltyEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- payments --></label>
+        <name>payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- streetNumber --></label>
+        <name>streetNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- tranDate --></label>
+        <name>tranDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- tranItems --></label>
+        <name>tranItems__c</name>
+    </fields>
+    <fields>
+        <label><!-- tranNo --></label>
+        <name>tranNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- tranTypeId --></label>
+        <name>tranTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- transactionDiscounts --></label>
+        <name>transactionDiscounts__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer E-Receipts Layout</layout>
+        <sections>
+            <label><!-- Credit Card Details --></label>
+            <section>Credit Card Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Loyalty &amp; Non Loyalty Details --></label>
+            <section>Loyalty &amp; Non Loyalty Details</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Person &amp; Cashier Information --></label>
+            <section>Sales Person &amp; Cashier Information</section>
+        </sections>
+        <sections>
+            <label><!-- Store Details --></label>
+            <section>Store Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

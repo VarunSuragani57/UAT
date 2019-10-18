@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A Delivery Type that will be visible for the SAP Delivery Search Preset</description>
+    <fields>
+        <fullName>ensxapp__Delivery_Type_Value__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Delivery Type Value</label>
+        <length>4</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Delivery_Search_Preset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The preset this Delivery Type is attached to</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Delivery Search Preset</label>
+        <referenceTo>ensxapp__SAP_Delivery_Search_Preset__mdt</referenceTo>
+        <relationshipLabel>SAP Delivery Search Preset Doc Types</relationshipLabel>
+        <relationshipName>SAP_Delivery_Search_Preset_Doc_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Delivery Search Preset Delivery Type</label>
+    <pluralLabel>SAP Delivery Search Preset Delivery Type</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

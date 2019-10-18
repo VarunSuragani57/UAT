@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A group of custom fields specific to a particular SAP component</description>
+    <fields>
+        <fullName>ensxapp__Component__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Component</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Delivery Detail</fullName>
+                    <default>true</default>
+                    <label>Delivery Detail</label>
+                </value>
+                <value>
+                    <fullName>Invoice Detail</fullName>
+                    <default>false</default>
+                    <label>Invoice Detail</label>
+                </value>
+                <value>
+                    <fullName>Sales Document Detail Header</fullName>
+                    <default>false</default>
+                    <label>Sales Document Detail Header</label>
+                </value>
+                <value>
+                    <fullName>Company Info</fullName>
+                    <default>false</default>
+                    <label>Company Info</label>
+                </value>
+                <value>
+                    <fullName>Customer Details</fullName>
+                    <default>false</default>
+                    <label>Customer Details</label>
+                </value>
+                <value>
+                    <fullName>Customer Sales Areas</fullName>
+                    <default>false</default>
+                    <label>Customer Sales Areas</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__User_Defined_Type__c</fullName>
+        <defaultValue>&quot;USER_DEFINED&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>User-Defined Tab in SAP from which custom fields are to be drawn</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>User-Defined Tab in SAP from which custom fields are to be drawn</inlineHelpText>
+        <label>User-Defined Type</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Component Custom Field Group</label>
+    <pluralLabel>SAP Component Custom Field Groups</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

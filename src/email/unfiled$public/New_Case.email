@@ -1,0 +1,6 @@
+A new case has been created by {!Case.CreatedBy}. 
+
+Case Number: {!Case.CaseNumber} 
+Account: {!Case.Account} 
+Subject: {!Case.Subject} 
+Type: {!Case.Type}

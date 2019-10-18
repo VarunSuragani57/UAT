@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SAP Invoice Search Preset Parameters</description>
+    <fields>
+        <fullName>ensxapp__Custom_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the field for a custom input field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The SAP field name for a custom field. This is only used if &quot;Is Custom&quot; is checked</inlineHelpText>
+        <label>Custom Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Custom__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this condition is a standard field or a custom field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Whether this is a stock field, or a user defined custom field</inlineHelpText>
+        <label>Is Custom</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Mapped_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field to map search parameter to when Parameter Type is Mapped Field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Mapped Field</label>
+        <metadataRelationshipControllingField>ensxapp__SAP_Invoice_Search_Preset_Parameter__mdt.ensxapp__Mapped_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>SAP_Invoice_Search_Preset_Parameters</relationshipLabel>
+        <relationshipName>SAP_Invoice_Search_Preset_Parameters</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Mapped_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Object type to map to when Parameter Type is Mapped Field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This should only be set if the Parameter Type is &quot;Mapped Field&quot;</inlineHelpText>
+        <label>Mapped Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>SAP_Invoice_Search_Preset_Parameters</relationshipLabel>
+        <relationshipName>SAP_Invoice_Search_Preset_Parameters</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Parameter_Type__c</fullName>
+        <defaultValue>&apos;Static Text&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Defines how the search criteria is specified</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines how the search criteria is specified</inlineHelpText>
+        <label>Parameter Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Static Text</fullName>
+                    <default>true</default>
+                    <label>Static Text</label>
+                </value>
+                <value>
+                    <fullName>Mapped Field</fullName>
+                    <default>false</default>
+                    <label>Mapped Field</label>
+                </value>
+                <value>
+                    <fullName>SAP Customer Number</fullName>
+                    <default>false</default>
+                    <label>SAP Customer Number</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Invoice field we are defining search criteria for</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The stock SAP field for this parameter</inlineHelpText>
+        <label>SAP Field</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SalesOrganization</fullName>
+                    <default>true</default>
+                    <label>Sales Organization</label>
+                </value>
+                <value>
+                    <fullName>Payer</fullName>
+                    <default>false</default>
+                    <label>Payer</label>
+                </value>
+                <value>
+                    <fullName>SoldToParty</fullName>
+                    <default>false</default>
+                    <label>Sold To Party</label>
+                </value>
+                <value>
+                    <fullName>BillingDateFrom</fullName>
+                    <default>false</default>
+                    <label>Billing Date From</label>
+                </value>
+                <value>
+                    <fullName>BillingDateTo</fullName>
+                    <default>false</default>
+                    <label>Billing Date To</label>
+                </value>
+                <value>
+                    <fullName>FromCreateDate</fullName>
+                    <default>false</default>
+                    <label>From Create Date</label>
+                </value>
+                <value>
+                    <fullName>To Create Date</fullName>
+                    <default>false</default>
+                    <label>To Create Date</label>
+                </value>
+                <value>
+                    <fullName>CreatedBy</fullName>
+                    <default>false</default>
+                    <label>Created By</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Invoice_Search_Preset__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Invoice Search Preset</label>
+        <referenceTo>ensxapp__SAP_Invoice_Search_Preset__mdt</referenceTo>
+        <relationshipLabel>SAP Invoice Search Preset Parameters</relationshipLabel>
+        <relationshipName>SAP_Invoice_Search_Preset_Parameters</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search criteria value to use when Parameter Type is set to Static Text, SAP Customer Nummber, or Mapped Object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This should only be populated if the Parameter Type is &quot;Static Text&quot;</inlineHelpText>
+        <label>Static Value</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Invoice Search Preset Parameter</label>
+    <pluralLabel>SAP Invoice Search Preset Parameters</pluralLabel>
+    <validationRules>
+        <fullName>ensxapp__Custom_field_name_required</fullName>
+        <active>true</active>
+        <description>If this is a custom field, a custom field name must be specified</description>
+        <errorConditionFormula>IF(
+ensxapp__Custom__c &amp;&amp; ISBLANK( ensxapp__Custom_Field_Name__c )
+, true
+, false)</errorConditionFormula>
+        <errorDisplayField>ensxapp__Custom_Field_Name__c</errorDisplayField>
+        <errorMessage>If this is a custom field, the custom field name is required. Either enter a field name or un-check the &quot;Is Custom&quot; box</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__Standard_Field_Required</fullName>
+        <active>true</active>
+        <description>If this is a standard field, an SAP field needs to be selected</description>
+        <errorConditionFormula>IF( NOT(ensxapp__Custom__c) &amp;&amp; ISBLANK(TEXT( ensxapp__SAP_Field__c ))
+, true
+, false)</errorConditionFormula>
+        <errorDisplayField>ensxapp__SAP_Field__c</errorDisplayField>
+        <errorMessage>A &quot;SAP Field&quot; must be selected if this is a standard parameter.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

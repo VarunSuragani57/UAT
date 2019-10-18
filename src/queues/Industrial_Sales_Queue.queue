@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>industrial.queue@ch.com.de</email>
+    <name>Industrial Sales Queue</name>
+    <queueMembers>
+        <users>
+            <user>aharris@carhartt.com</user>
+            <user>cpatillo@carhartt.com</user>
+            <user>ccole@carhartt.com</user>
+            <user>dbrewer@carhartt.com</user>
+            <user>dduprey@carhartt.com</user>
+            <user>edodson@carhartt.com</user>
+            <user>jcummings@carhartt.com</user>
+            <user>jlaframboise@carhartt.com</user>
+            <user>kbokmiller@carhartt.com</user>
+            <user>sperez@carhartt.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

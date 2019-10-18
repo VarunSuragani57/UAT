@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Salesforce Training</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/sfc/#search?searchTerm=salesforce&amp;shepherdToken=FYbmdF9r.Th0VjHMDBf3hxw__4uobPPlmMl5XzvFqd1Pk4x6mqX6VTsgt7wKfv6TxtHGxxnCioLs2zRQk1qB5fAcGtcmenQHWMtF3iEBwGoyrxt3z.MMtK9iknj.Ty5IbTOh4hrIZspBP4O6x8oHtdu6HKg%3D&amp;searchPageNum=0</url>
+</CustomPageWebLink>

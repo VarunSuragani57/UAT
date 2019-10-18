@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Sort field definition for Sales Doc Search Preset</description>
+    <fields>
+        <fullName>ensxapp__Precedence__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The priority of this sort field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Lower number indicates higher precedence</inlineHelpText>
+        <label>Precedence</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Sales_Doc_Search_Preset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search preset this sort definition belongs to</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Sales Doc Search Preset</label>
+        <referenceTo>ensxapp__SAP_Sales_Doc_Search_Preset__mdt</referenceTo>
+        <relationshipLabel>SAP Sales Doc Search Preset Sort Fields.</relationshipLabel>
+        <relationshipName>SAP_Sales_Doc_Search_Preset_Sort_Fields</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Sort_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Sort Direction</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ascending</fullName>
+                    <default>false</default>
+                    <label>Ascending</label>
+                </value>
+                <value>
+                    <fullName>Descending</fullName>
+                    <default>true</default>
+                    <label>Descending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Sort_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The SAP field to sort by</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Sort Field</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ERDAT</fullName>
+                    <default>true</default>
+                    <label>Create Date</label>
+                </value>
+                <value>
+                    <fullName>BSTNK</fullName>
+                    <default>false</default>
+                    <label>Customer PONumber</label>
+                </value>
+                <value>
+                    <fullName>NETWR</fullName>
+                    <default>false</default>
+                    <label>Net Order Value</label>
+                </value>
+                <value>
+                    <fullName>VBELN</fullName>
+                    <default>false</default>
+                    <label>Sales Document</label>
+                </value>
+                <value>
+                    <fullName>KUNWE</fullName>
+                    <default>false</default>
+                    <label>Ship To Party</label>
+                </value>
+                <value>
+                    <fullName>KUNAG</fullName>
+                    <default>false</default>
+                    <label>Sold To Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>SAP Sales Doc Search Preset Sort Field</label>
+    <pluralLabel>SAP Sales Doc Search Preset Sort Fields.</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

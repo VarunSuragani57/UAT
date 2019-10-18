@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ideas That Work</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ideas That Work</value>
+    </caseValues>
+    <fields>
+        <label><!-- Any professional or personal abt idea-25 --></label>
+        <name>Any_professional_or_personal_abt_idea_25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are there other brands currently -20 --></label>
+        <name>Are_there_other_brands_currently_20__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sure</masterLabel>
+            <translation><!-- Not Sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Please Select</masterLabel>
+            <translation><!-- Please Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attachment Available --></label>
+        <name>Attachment_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carhartt currently offering your idea? --></label>
+        <name>Carhartt_currently_offering_your_idea__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sure</masterLabel>
+            <translation><!-- Not Sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Please Select</masterLabel>
+            <translation><!-- Please Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Carhartt similar to your idea -16 --></label>
+        <name>Carhartt_make_something_similar__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you have any information regarding co --></label>
+        <name>Do_you_have_any_information_regarding_co__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sure</masterLabel>
+            <translation><!-- Not Sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Please Select</masterLabel>
+            <translation><!-- Please Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain Carhartt offers to idea -19 --></label>
+        <name>Explain_Carhartt_offers_to_idea_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Idea Category Others -11 --></label>
+        <name>Idea_Category_Others_11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Idea Category --></label>
+        <name>Idea_Category__c</name>
+        <picklistValues>
+            <masterLabel>Marketing/Advertising Idea</masterLabel>
+            <translation><!-- Marketing/Advertising Idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packaging Idea</masterLabel>
+            <translation><!-- Packaging Idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Please Select</masterLabel>
+            <translation><!-- Please Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Idea</masterLabel>
+            <translation><!-- Product Idea --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Idea Title -13 --></label>
+        <name>Idea_Title_13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information regarding copyrights -22 --></label>
+        <name>Information_regarding_copyrights_22__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Please Select</masterLabel>
+            <translation><!-- Please Select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Information regarding copyrights Text-23 --></label>
+        <name>Information_regarding_copyrights_Text_23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in your idea or purchasing-15 --></label>
+        <name>Interested_in_your_idea_or_purchasing_15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kind of Product Idea --></label>
+        <name>Kind_of_Product_Idea__c</name>
+        <picklistValues>
+            <masterLabel>New product or product improvement idea</masterLabel>
+            <translation><!-- New product or product improvement idea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for additional sizes on a current product</masterLabel>
+            <translation><!-- Request for additional sizes on a current product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request to bring back a discontinued product</masterLabel>
+            <translation><!-- Request to bring back a discontinued product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Idea Ans -12 --></label>
+        <name>Product_Idea_Ans_12__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tell us a little bit more about yourself --></label>
+        <name>Tell_us_a_little_bit_more_about_yourself__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tell us about your idea -14 --></label>
+        <name>Tell_us_about_your_idea_14__c</name>
+    </fields>
+    <fields>
+        <label><!-- TermCondition --></label>
+        <name>TermCondition__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZipCode --></label>
+        <name>ZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- what other brands similar to idea -21 --></label>
+        <name>what_other_brands_similar_to_idea_21__c</name>
+    </fields>
+    <layouts>
+        <layout>Ideas That Work Layout</layout>
+        <sections>
+            <label><!-- About me --></label>
+            <section>About me</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Idea Category Information --></label>
+            <section>Idea Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Idea Title &amp; Details --></label>
+            <section>Idea Title &amp; Details</section>
+        </sections>
+        <sections>
+            <label><!-- Patent, CR, or TM Information --></label>
+            <section>Patent, CR, or TM Information</section>
+        </sections>
+        <sections>
+            <label><!-- Similar Products --></label>
+            <section>Similar Products</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

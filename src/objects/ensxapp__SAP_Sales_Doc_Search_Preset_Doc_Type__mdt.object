@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A Sales Doc Type that will be visible for the SAP Sales Doc Search Preset</description>
+    <fields>
+        <fullName>ensxapp__Doc_Type_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Doc Type Value</label>
+        <length>4</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Sales_Doc_Search_Preset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The preset this Doc Type is attached to</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Sales Doc Search Preset</label>
+        <referenceTo>ensxapp__SAP_Sales_Doc_Search_Preset__mdt</referenceTo>
+        <relationshipLabel>SAP Sales Doc Search Preset Doc Types</relationshipLabel>
+        <relationshipName>SAP_Sales_Doc_Search_Preset_Doc_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Sales Doc Search Preset Doc Type</label>
+    <pluralLabel>SAP Sales Doc Search Preset Doc Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

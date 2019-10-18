@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>End user email catalog blast</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>test New Year End User Catalog letter</name>
+    <style>none</style>
+    <subject>Carhartt 2016 Industrial and FR catalog</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

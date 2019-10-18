@@ -1,0 +1,91 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" controller="LeadGenerationController"> 
+ <style>
+ button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    height: 32px;
+}
+ </style>
+ <apex:form > 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>A Reusable Contact Form In Bootstrap - reusable form</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Contact Us</h2> 
+                    <p> Send us your message and we will get back to you as soon as possible </p>
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> First Name:</label>
+                                <apex:inputfield value="{!newLead.FirstName}" styleclass="form-control" />
+                                
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Last Name:</label>
+                                <apex:inputfield value="{!newLead.LastName}" styleclass="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Email:</label>
+                                <apex:inputfield value="{!newLead.Email}" styleclass="form-control" />
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Phone:</label>
+                                <input  class="form-control"  id="phone" maxlength="50" name="phone" size="20" type="text"  />
+
+                                <!--<input type="tel" class="form-control" id="phone" name="phone"  maxlength="50"/>-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Company:</label>
+                                <apex:inputfield value="{!newLead.Company}" styleclass="form-control" />
+                            </div>
+                            
+                            </div>
+                        <div class="row">
+                            
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Owner:</label>
+                                <apex:inputfield value="{!newLead.OwnerId}"  />
+                            </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name"> Message:</label>
+                                <textarea  class="form-control" id="00N7F00000JGillUAD" name="00N7F00000JGillUAD" maxlength="6000" rows="7" type="text" wrap="soft"></textarea>
+                                <!--<textarea  type="textarea" id="message" name="message" placeholder="Your Message Here" ></textarea>-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                            <apex:commandButton value="Submit" Styleclass="btn btn-lg btn-success btn-block" id="btnContactUs" style="background:blue" action="{!createLead}"/>
+                            <!--<input type="submit"  />-->
+                               
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    </apex:form>
+</apex:page>

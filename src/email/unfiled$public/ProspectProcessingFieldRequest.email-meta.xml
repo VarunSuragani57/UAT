@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to field sales associate requesting processing of a prospect</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Prospect Processing Field Request</name>
+    <style>none</style>
+    <subject>Please Process Prospect</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,23 @@
+<aura:application access="GLOBAL" extends="ltng:outApp">
+    <br/> 
+    <!--<aura:handler name="init" value="{!this}" action="{!c.loadOptions}" />-->
+    <aura:handler event="c:SampleEvent" action="{!c.handleApplicationEvent}"/>
+    <br/>
+    <div aura:id="Sample1">
+    <c:Sample1 />
+        </div>
+    <div aura:id="Sample2">
+    <c:Sample2 />
+    </div>
+    <div aura:id="Sample3">
+    <c:Sample3 />
+    </div>
+    <div aura:id="Sample4">
+    <c:Sample4 />
+    </div>
+    
+    
+   
+    <br/>
+    <br/><br/>
+</aura:application>

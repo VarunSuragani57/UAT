@@ -1,0 +1,204 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+ <center>
+        <div class="slds-page-header" role="banner" Style="background:rgb(229, 229, 225);width:50%;">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                </div>
+                <div class="slds-media__body">
+                    <p class="slds-page-header__title slds-truncate slds-align-middle" Style="margin-left:-300px;" title="Rohde Corp - 80,000 Widgets"><b>Contact Details:</b></p>
+                </div>
+            </div>
+        </div>
+        <center>
+            <br/><br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;"></span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;">Asset ID</span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;"></span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;">Asset ID</span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;"></span>
+                </div>
+                
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;">Asset ID</span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;"></span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;">Asset ID</span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+                </div>
+            </div>
+        </center>
+        <br/><br/>
+        <div class="slds-page-header" role="banner" Style="background:rgb(229, 229, 225);width:50%;">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                </div>
+                <div class="slds-media__body">
+                    <p class="slds-page-header__title slds-truncate slds-align-middle" Style="margin-left:-250px;" title="Rohde Corp - 80,000 Widgets"><b>Personal Detail Application 1:</b></p>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <fieldset class="slds-form-element">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;"></span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span Style="margin:left:100px;">Asset ID</span>
+                </div>
+                <div class="slds-col slds-size_1-of-5">
+                    <span>  <span class="slds-radio">
+                        <input type="radio" id="radio-13" name="options" value="on" />
+                        <label class="slds-radio__label" for="radio-13">
+                            <span class="slds-radio_faux"></span>
+                            <span class="slds-form-element__label">Lead Generation</span>
+                        </label>
+                        </span>
+                        <span class="slds-radio">
+                            <input type="radio" id="radio-14" name="options" value="on" />
+                            <label class="slds-radio__label" for="radio-14">
+                                <span class="slds-radio_faux"></span>
+                                <span class="slds-form-element__label">Education Leads</span>
+                            </label>
+                        </span></span>
+                </div>
+            </div>
+            
+        </fieldset>
+        <br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <br/>
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_1-of-9">
+                <span> <lightning:select name="selectItem" label="" onchange="{!c.doSomething}">
+                    <option value="">choose one...</option>
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    </lightning:select></span>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <span> <input type="text" id="input-id-01" class="slds-input" placeholder="Placeholder Text" /></span>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-5">
+                <span Style="margin:left:100px;"></span>
+            </div>
+            <div class="slds-col slds-size_1-of-5">
+                <br/>
+                <span Style="margin:left:100px;">Asset ID</span>
+            </div>
+            <div class="slds-col slds-size_3-of-9">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-3">
+                        <span><lightning:select name="selectItem" label="" onchange="{!c.doSomething}">
+                            <option value="">choose one...</option>
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            </lightning:select></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <span><lightning:select name="selectItem" label="" onchange="{!c.doSomething}">
+                            <option value="">choose one...</option>
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            </lightning:select></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <span><lightning:select name="selectItem" label="" onchange="{!c.doSomething}">
+                            <option value="">choose one...</option>
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            </lightning:select></span>
+                    </div>
+                </div>
+                <span> </span>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/>
+    </center>
+</aura:component>

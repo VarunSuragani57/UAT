@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Sales Reps Dashboards</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Canada_Sales_Rep</role>
+        <role>Department_Store_Sales_Rep</role>
+        <role>Discount_Sales_Rep</role>
+        <role>East_Sales_Rep</role>
+        <role>Farm_Ranch_Sales_Rep</role>
+        <role>Industrial_Sales_Rep</role>
+        <role>Inside_Sales_Rep</role>
+        <role>Midwest_Sales_Rep</role>
+        <role>South_Sales_Rep</role>
+        <role>Sporting_Goods_Outerwear_Sales_Rep</role>
+        <role>West_Sales_Rep</role>
+        <role>Wholesales_Sales_Rep</role>
+    </sharedTo>
+</DashboardFolder>

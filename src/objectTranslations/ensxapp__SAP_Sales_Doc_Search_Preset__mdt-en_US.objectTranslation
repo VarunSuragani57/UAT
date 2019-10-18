@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billing Block --></label>
+        <name>ensxapp__Billing_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Only --></label>
+        <name>ensxapp__Completed_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Only --></label>
+        <name>ensxapp__Created_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Block --></label>
+        <name>ensxapp__Credit_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Block --></label>
+        <name>ensxapp__Delivery_Block__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Only --></label>
+        <name>ensxapp__Open_Only__c</name>
+    </fields>
+</CustomObjectTranslation>

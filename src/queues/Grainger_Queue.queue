@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>grainger.queue@ch.com.de</email>
+    <name>Grainger Queue</name>
+    <queueMembers>
+        <users>
+            <user>aharris@carhartt.com</user>
+            <user>cpatillo@carhartt.com</user>
+            <user>dbrewer@carhartt.com</user>
+            <user>jcummings@carhartt.com</user>
+            <user>jlaframboise@carhartt.com</user>
+            <user>sperez@carhartt.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

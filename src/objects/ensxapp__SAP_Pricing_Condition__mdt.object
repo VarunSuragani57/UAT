@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Top level pricing condition wrapper</description>
+    <fields>
+        <fullName>ensxapp__Input_Condition__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this condition is used to pass information to SAP during pricing</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Input Condition</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Output_Condition__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this condition is returned from SAP and needs to be mapped back to Salesforce</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Output Condition</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Condition_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>SAP Condition Type code</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Use this to map this condition to a single static type for the condition code.</inlineHelpText>
+        <label>SAP Condition Code</label>
+        <length>4</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Condition_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Whether this maps to the opportunity or an item.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Condition Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Item</fullName>
+                    <default>true</default>
+                    <label>Item</label>
+                </value>
+                <value>
+                    <fullName>Header</fullName>
+                    <default>false</default>
+                    <label>Header</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Pricing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order type for this condition type</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Pricing</label>
+        <referenceTo>ensxapp__SAP_Pricing__mdt</referenceTo>
+        <relationshipLabel>SAP Pricing Conditions</relationshipLabel>
+        <relationshipName>SAP_Pricing_Conditions</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Salesforce object to which this SAP condition field maps</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Salesforce Field</label>
+        <metadataRelationshipControllingField>ensxapp__SAP_Pricing_Condition__mdt.ensxapp__Salesforce_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>SAP_Pricing_Conditions</relationshipLabel>
+        <relationshipName>SAP_Pricing_Conditions</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Object on which the condition type is stored</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Use this if you&apos;re going to map the condition code for this to a field on an sObject</inlineHelpText>
+        <label>Salesforce Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>SAP_Pricing_Groups</relationshipLabel>
+        <relationshipName>SAP_Pricing_Groups</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Pricing Condition</label>
+    <pluralLabel>SAP Pricing Conditions</pluralLabel>
+    <validationRules>
+        <fullName>ensxapp__Condition_Must_Be_Input_And_Or_Output</fullName>
+        <active>true</active>
+        <description>A condition must be an input, an output, or both. Please make a selection of &quot;Input&quot; or &quot;Output&quot;.</description>
+        <errorConditionFormula>(NOT( ensxapp__Input_Condition__c )) &amp;&amp; (NOT( ensxapp__Output_Condition__c ))</errorConditionFormula>
+        <errorMessage>A condition must be an input, an output, or both. Please make a selection of &quot;Input&quot; or &quot;Output&quot;.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,3 @@
+Case Number {!Case.CaseNumber} had violated customer commitment {!Case.Entitlement}.
+
+Current Owner: {!Case.OwnerFullName}

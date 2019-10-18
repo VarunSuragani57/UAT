@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Case resolved</fullName>
+        <default>false</default>
+        <label>Case resolved</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quality hold removed</fullName>
+        <default>false</default>
+        <label>Quality hold removed</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Issue Resolved</fullName>
+        <default>false</default>
+        <label>Issue Resolved</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Placed</fullName>
+        <default>false</default>
+        <label>Order Placed</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Label Sent</fullName>
+        <default>false</default>
+        <label>Label Sent</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>RA Issued</fullName>
+        <default>false</default>
+        <label>RA Issued</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Adjusted</fullName>
+        <default>false</default>
+        <label>Order Adjusted</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Cancelled</fullName>
+        <default>false</default>
+        <label>Order Cancelled</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>RA Cancelled</fullName>
+        <default>false</default>
+        <label>RA Cancelled</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Sent</fullName>
+        <default>false</default>
+        <label>Request Sent</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Case Closed</fullName>
+        <default>false</default>
+        <label>Case Closed</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Transferred to Licensee</fullName>
+        <default>false</default>
+        <label>Transferred to Licensee</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Provided Information</fullName>
+        <default>false</default>
+        <label>Provided Information</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

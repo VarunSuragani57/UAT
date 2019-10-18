@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>012-Brian Bonin</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>012-Brian Bonin</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <accountAccessLevel>Edit</accountAccessLevel>
+    <parentTerritory>TechnicalSales</parentTerritory>
+</Territory>

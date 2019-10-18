@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_Email</letterhead>
+    <name>Brand Management Close case email template</name>
+    <style>freeForm</style>
+    <subject>Closed Case : {!Case.Type}</subject>
+    <textOnly>A case has been closed by: {!Case.CreatedBy} with the below details.
+
+
+Case Link : {!Case.Link}
+Subject of the Case: {!Case.Subject}
+Case Number: {!Case.CaseNumber}
+Contact Name: {!Case.Contact}
+Type of Case: {!Case.Type}
+
+
+
+Thank you,
+Carhartt</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

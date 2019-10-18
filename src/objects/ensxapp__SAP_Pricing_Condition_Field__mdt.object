@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mappings between Salesforce objects and SAP Condition fields</description>
+    <fields>
+        <fullName>ensxapp__Input__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether or not this field is intended as an input value for pricing calculations</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines whether or not this field is intended as an input value for pricing calculations</inlineHelpText>
+        <label>Input</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Output__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether or not this field is meant to contain data returned from pricing calculations</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines whether or not this field is meant to contain data returned from pricing calculations</inlineHelpText>
+        <label>Output</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>SAP Field that maps onto this Salesforce field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Field</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ConditionPricingUnit</fullName>
+                    <default>false</default>
+                    <label>Condition Pricing Unit</label>
+                </value>
+                <value>
+                    <fullName>ConditionUnit</fullName>
+                    <default>false</default>
+                    <label>Condition Unit</label>
+                </value>
+                <value>
+                    <fullName>ConditionValue</fullName>
+                    <default>false</default>
+                    <label>Condition Value</label>
+                </value>
+                <value>
+                    <fullName>Rate</fullName>
+                    <default>false</default>
+                    <label>Rate</label>
+                </value>
+                <value>
+                    <fullName>RateUnit</fullName>
+                    <default>false</default>
+                    <label>Rate Unit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__SAP_Pricing_Condition__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Pricing condition for which this is the individual field information.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SAP Pricing Condition</label>
+        <referenceTo>ensxapp__SAP_Pricing_Condition__mdt</referenceTo>
+        <relationshipLabel>SAP Pricing Condition Fields</relationshipLabel>
+        <relationshipName>SAP_Pricing_Condition_Fields</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field on the Salesforce object to which this SAP field maps</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Salesforce Field</label>
+        <metadataRelationshipControllingField>ensxapp__SAP_Pricing_Condition_Field__mdt.ensxapp__Salesforce_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>SAP_Conditions</relationshipLabel>
+        <relationshipName>SAP_Conditions</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Salesforce_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce object unto which this condition field maps</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This should be either Opportunity or Opportunity Product</inlineHelpText>
+        <label>Salesforce Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>SAP_Conditions</relationshipLabel>
+        <relationshipName>SAP_Conditions</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used for mapping a static value to an SAP field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This will *always* override any fields that may be mapped.</inlineHelpText>
+        <label>Value</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Pricing Condition Field</label>
+    <pluralLabel>SAP Pricing Condition Fields</pluralLabel>
+    <validationRules>
+        <fullName>ensxapp__Condition_Value_Cannot_Be_Input</fullName>
+        <active>true</active>
+        <description>SAP Condition Value Fields are &quot;Output&quot; only.</description>
+        <errorConditionFormula>(AND(ensxapp__Input__c)) &amp;&amp; (ISPICKVAL(ensxapp__SAP_Field__c, &apos;ConditionValue&apos;))</errorConditionFormula>
+        <errorMessage>SAP Condition Value Fields are &quot;Output&quot; only; please de-select the &quot;Input&quot; box, and select &quot;Output&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__Must_Be_An_Input_Output_or_Both</fullName>
+        <active>true</active>
+        <description>The field must be an input field, an output field, or both</description>
+        <errorConditionFormula>(NOT(ensxapp__Input__c)) &amp;&amp; (NOT(ensxapp__Output__c))</errorConditionFormula>
+        <errorMessage>The field must be an input field, an output field, or both</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__No_Input_Field_If_Condition_Not_Input</fullName>
+        <active>true</active>
+        <description>The field cannot be an input field if the condition it&apos;s mapped to does not support input</description>
+        <errorConditionFormula>(AND(ensxapp__Input__c)) &amp;&amp;   (NOT(ensxapp__SAP_Pricing_Condition__r.ensxapp__Input_Condition__c))</errorConditionFormula>
+        <errorMessage>The field cannot be an input field if the condition it&apos;s mapped to does not support an input value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ensxapp__No_Output_Field_If_Condition_Not_Output</fullName>
+        <active>true</active>
+        <description>The field cannot be an output field if the condition it&apos;s mapped to does not support output</description>
+        <errorConditionFormula>(AND(ensxapp__Output__c)) &amp;&amp;   (NOT(ensxapp__SAP_Pricing_Condition__r.ensxapp__Output_Condition__c))</errorConditionFormula>
+        <errorMessage>The field cannot be an output field if the condition it&apos;s mapped to does not support an output value.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

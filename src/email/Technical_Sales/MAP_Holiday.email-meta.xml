@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attachedDocuments>SharedDocuments/Carhartt_MAP_Holiday_Program_2014_2_docx.htm</attachedDocuments>
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MAP Holiday</name>
+    <style>none</style>
+    <subject>Carhartt MAP Holiday Promotion Deadline</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

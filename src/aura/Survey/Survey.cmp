@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="UploadFiles" type="Boolean" default="false"/>
+    <aura:attribute name="Encoded_ID" type="String" />
+    <aura:attribute name="radioOptions" type="List" default="[
+                                                             {'label': 'Very satisfied' , 'value': 'true'},
+                                                             {'label': 'Somewhat dissatisfied', 'value': 'false'},
+                                                             {'label': 'Very dissatisfied', 'value': 'false'},
+                                                             {'label': 'Satisfied', 'value': 'false'}]"/>
+    <div class="test"><p>This is top level Paragraph elements</p></div>
+    <lightning:radioGroup class="test" aura:id="UploadFiles" 
+                          name="UploadFiles" 
+                          label="Click here to upload any logos, pictures, or other files you would 
+                                 like incorporated in your design:" 
+                          options="{! v.radioOptions }" value="{! v.UploadFiles }" type="radio"
+                          />
+    
+    <div class="slds-p-top_small"></div>
+    
+
+                
+            <!-- If customer clicks yes to upload files show the file upload iframe. -->
+            
+
+    
+    
+    
+  
+    
+</aura:component>

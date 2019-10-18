@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retailer</fullName>
+        <default>false</default>
+        <label>Retailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account</fullName>
+        <default>false</default>
+        <label>Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved Converted</fullName>
+        <default>false</default>
+        <label>Approved Converted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CS-IS</fullName>
+        <default>false</default>
+        <label>CS-IS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Discount</fullName>
+        <default>false</default>
+        <label>Discount</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IS-Top 100</fullName>
+        <default>false</default>
+        <label>IS-Top 100</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect Declined</fullName>
+        <default>false</default>
+        <label>Prospect Declined</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect In Progress</fullName>
+        <default>false</default>
+        <label>Prospect In Progress</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect on Hold</fullName>
+        <default>false</default>
+        <label>Prospect on Hold</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transition Wave 2</fullName>
+        <default>false</default>
+        <label>Transition Wave 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trans - Wave 1</fullName>
+        <default>false</default>
+        <label>Trans - Wave 1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Prospect</fullName>
+        <default>false</default>
+        <label>Direct Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Customer</fullName>
+        <default>false</default>
+        <label>Direct Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End User Prospect</fullName>
+        <default>false</default>
+        <label>End User Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End User Customer</fullName>
+        <default>false</default>
+        <label>End User Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

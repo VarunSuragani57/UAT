@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<!-- PAGE HEADER -->
+    <div class="slds-m-around_large">
+<div class="slds-page-header">
+      <p class="slds-text-title_caps slds-line-height_reset"></p>
+      <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"  title="My Contacts">Generate Coupons</h1> 
+</div>
+</div>
+  
+
+</aura:component>

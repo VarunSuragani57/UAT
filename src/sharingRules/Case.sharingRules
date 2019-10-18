@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Open_Case_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Open Case Access</label>
+        <sharedTo>
+            <roleAndSubordinates>Director_of_Customer_Engagement</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Director_of_Customer_Engagement</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

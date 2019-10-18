@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Lower number indicates higher precedence --></help>
+        <label><!-- Precedence --></label>
+        <name>ensxapp__Precedence__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Sales Doc Search Preset --></label>
+        <name>ensxapp__SAP_Sales_Doc_Search_Preset__c</name>
+        <relationshipLabel><!-- SAP Sales Doc Search Preset Sort Fields. --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Direction --></label>
+        <name>ensxapp__Sort_Direction__c</name>
+        <picklistValues>
+            <masterLabel>Ascending</masterLabel>
+            <translation><!-- Ascending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descending</masterLabel>
+            <translation><!-- Descending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sort Field --></label>
+        <name>ensxapp__Sort_Field__c</name>
+        <picklistValues>
+            <masterLabel>Create Date</masterLabel>
+            <translation><!-- Create Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer PONumber</masterLabel>
+            <translation><!-- Customer PONumber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Order Value</masterLabel>
+            <translation><!-- Net Order Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Document</masterLabel>
+            <translation><!-- Sales Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Party</masterLabel>
+            <translation><!-- Ship To Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold To Party</masterLabel>
+            <translation><!-- Sold To Party --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

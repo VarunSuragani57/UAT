@@ -1,0 +1,466 @@
+<aura:component controller="ContactIdeaController" implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.loadOptions}" />
+    <aura:attribute name="recId" type="String"  />
+    <aura:attribute name="IdeaNumber" type="String"  />
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedValue" type="String" default="Red"/> 
+    <aura:attribute name="options1" type="List" />
+    <aura:attribute name="options2" type="List" />
+    <aura:attribute name="options3" type="List" />
+    <aura:attribute name="selectedValue1" type="String" default="Red"/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <!-- Define Attribute-->
+    <!--<aura:attribute name="IdeaThatWork" type="Ideas_That_Work__c" /> -->
+    <aura:attribute name="IdeaThatWork" type="Object" />
+    <aura:attribute name="ParentId" type="String" default=""/>
+    <aura:attribute name="message" description="Message content, can be HTML" type="String" default=""/>
+    <aura:attribute name="messageType" description="" type="String" default=""/>
+    <aura:registerEvent name="appEvent" type="c:SampleEvent"/>
+    <aura:registerEvent name="IdeaToWorkEventForVF" type="c:IdeaToWorkEventForVF"/>
+    <aura:registerEvent name="save" type="c:SaveAttachments"/>
+    <aura:handler name="bindAttachment" event="c:BindAttachment" action="{!c.handleBindAttachment}"/>
+    
+    <div class="parent" Style="background-color:#fdb913; color:#000000">
+        <br></br>
+        <img src="{!$Resource.IdeasthatworkHeader}" class="slds-align_absolute-center" width="800"/>
+        
+        <div class="child" Style="background-color:#FFF8E8;margin-left:5%;margin-right:5%;">
+            <br/>
+            <div Style="padding-left: 5%;padding-right: 5%;" aura:Id="messageComponent1" class="slds-hide"> 
+                <c:MessageComponent type="{!v.messageType}" message="{!v.message}"/>
+            </div>
+            <br/>
+            <div class="slds-p-around_x-large">
+                <div class="slds-grid slds-container--center slds-wrap"> 
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">First Name</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span><ui:inputText aura:id="name" placeholder="Enter Text"  class="slds-input"  value="{!v.IdeaThatWork.First_Name__c}" /></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class="slds-text-align_left" Style="font-size: 14pt;font-family: arial;">Last Name</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span><ui:inputText aura:id="name" placeholder="Enter Text"  class="slds-input" value="{!v.IdeaThatWork.Last_Name__c}" /></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Email</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span><ui:inputText aura:id="name" placeholder="Enter email"  class="slds-input" value="{!v.IdeaThatWork.Email__c}" /></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span Style="font-size: 14pt;font-family: arial; ">Phone Number</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span><ui:inputText aura:id="name" placeholder="Enter phone number"  class="slds-input" maxlength="10" value="{!v.IdeaThatWork.Phone_Number__c}" /></span>
+                    </div>
+                    
+                </div>
+                <br/> <br/> <br/> <br/>
+                <div class="slds-grid slds-container--center slds-wrap">
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Idea Category<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <lightning:select name="mySelect" label="" aura:id="CategorySelect" value="{!v.IdeaThatWork.Idea_Category__c}"  onchange="{!c.OnChangeCategory}">
+                            <option value="">Please Select</option>
+                            <aura:iteration items="{!v.options}" var="item">
+                                <option text="{!item.label}" value="{!item.value}"  />
+                            </aura:iteration><br/><br/>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <br/>  <span class=".slds-float_left" aura:id="OtherCategory" Style="font-size: 14pt;font-family: arial;"> Please give your idea a category<span style="color:red;">*</span></span>
+                        <span class=".slds-float_left"> 
+                            <label  for="input-id-01" aura:id="productIdea" Style="font-size: 14pt;font-family: arial;" ><br/>What kind of product idea do you have?<span style="color:red;">*</span>
+                            </label>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <br/>
+                        <ui:inputText   placeholder="Enter Name" class="slds-input slds-hide" value="{!v.IdeaThatWork.Kind_of_Product_Idea__c}"/>
+                        <ui:inputText    aura:id="OtherCategory1" placeholder="Enter Name" class="slds-input slds-hide" value="{!v.IdeaThatWork.Idea_Category_Others_11__c}" />
+                        <br/>
+                        <span class="slds-checkbox">
+                            <div aura:id="productIdea1">
+                                <ui:inputRadio aura:id="r0"  name="others" label="" click="{!c.handleRadioClick}"/> 
+                                <span Style="font-size: 13pt;font-family: arial;">New product or product improvement idea</span>
+                                &nbsp;&nbsp;<br/>
+                                <ui:inputRadio aura:id="r1"  name="others"   label=""  click="{!c.handleRadioClick}"/>
+                                <span Style="font-size: 13pt;font-family: arial;">Request to bring back a discontinued product</span><br/>
+                                <ui:inputRadio aura:id="r3"  name="others"   label="" click="{!c.handleRadioClick}"/>
+                                <span Style="font-size: 13pt;font-family: arial;">Request for additional sizes on a current product</span><br/><br/>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    <div class="slds-col slds-size_3-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Ideal Title<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <ui:inputText    placeholder="Enter Name" required="true" class="slds-input" value="{!v.IdeaThatWork.Idea_Title_13__c}" />
+                        *No pressure, just give us a short title to help explain your idea!
+                        
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;line-break: auto;">Tell us about your idea<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.Tell_us_about_your_idea_14__c}" />
+                        There is no character limit so be sure to describe your idea in as much detail as possible and let us know what type of problem you feel your idea would solve! *
+                        
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/><br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;line-break: auto;">Describe the type of person you think would be most interested in your idea or purchasing your product. <span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <ui:inputTextArea aura:id="my-element" class="slds-input"  value="{!v.IdeaThatWork.Interested_in_your_idea_or_purchasing_15__c}"/>
+                        Please provide as much detail as possible. *
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left slds-hide" aura:id="friendFamilyFieldId" Style="font-size: 14pt;font-family: arial;line-break: auto;">If Carhartt were to make something similar to your idea,how much do you think your friends/family would pay for it?<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <span class="slds-hide" aura:id="friendFamilyFieldId1"> <ui:inputText aura:id="my-element" placeholder="Enter whole numbers" class="slds-input " value="{!v.IdeaThatWork.Carhartt_make_something_similar__c}" />
+                            Please use only whole numbers. 
+                            Ex: 40, 10, etc.</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/> <br/> <br/> 
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Please upload any images or files that gave you inspiration for your idea.</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <c:UploadAttachment rowIndex="1"/>NOTE: If you would like to upload a document and are having difficulty using a mobile device, please continue submitting your idea on a computer. 
+                        Your progress will be automatically saved from this point.
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Has this idea been offered by Carhartt (either currently or in the past)?<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <lightning:select name="mySelect" aura:id="mySelect" value="{!v.IdeaThatWork.Carhartt_currently_offering_your_idea__c}" onchange="{!c.OnChangeoffers}">
+                            <option value="">Please Select</option>
+                            <aura:iteration items="{!v.options1}" var="item">
+                                <option text="{!item.label}" value="{!item.value}"  />
+                            </aura:iteration><br/><br/>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    <br/><br/><br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/><br/><br/>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left slds-hide" Style="font-size: 14pt;font-family: arial;" aura:id="offersId1">Please explain what Carhartt is offering (or has offered in the past) that is similar to your idea <span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <span aura:id="offersId" class="slds-hide"><ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.Explain_Carhartt_offers_to_idea_19__c}"/></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/><br/><br/> 
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Are there other brands that are currently offering (or have offered in the past) something similar to your idea?<span style="color:red;">*</span></span>
+                    </div>
+                    <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <lightning:select name="mySelect1" aura:id="mySelect1" value="{!v.IdeaThatWork.Are_there_other_brands_currently_20__c}" onchange="{!c.OnChangebrand}">
+                            <option value="">Please Select</option>
+                            <aura:iteration items="{!v.options2}" var="item">
+                                <option text="{!item.label}" value="{!item.value}"  />
+                            </aura:iteration><br/><br/>
+                        </lightning:select> 
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    <br/><br/><br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left slds-hide" Style="font-size: 14pt;font-family: arial;" aura:id="brandsId">Please explain what other brands are currently offering (or have offered in the past) that is similar to your idea <span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <span aura:id="brandsId1" class="slds-hide"><ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.what_other_brands_similar_to_idea_21__c}" /></span>
+                    </div>
+                    <br/><br/><br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    
+                    <br/><br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <br/><br/><br/><br/>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Do you have any information regarding copyrights, patents, or trademarks related to your idea?<span style="color:red;">*</span></span>
+                        <br/><br/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <lightning:select name="mySelect1" label="" aura:id="mySelect1" value="{!v.IdeaThatWork.Information_regarding_copyrights_22__c}" onchange="{!c.OnChangeCopyRights}" >
+                            <option value="">Please Select</option> 
+                            <aura:iteration items="{!v.options3}" var="item">
+                                <option text="{!item.label}" value="{!item.value}"  ></option>
+                            </aura:iteration><br/><br/>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    <br/><br/><br/> <br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left slds-hide" Style="font-size: 14pt;font-family: arial;" aura:id="copyRightsId">Please provide any information you have on copyrights, patents, or trademarks related to your idea<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <span aura:id="copyRightsId1" class="slds-hide"><ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.Information_regarding_copyrights_Text_23__c}" /></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    
+                 <br/><br/><br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                     
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Please upload any documents regarding copyrights, patents, or trademarks related to your idea </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <c:UploadAttachment rowIndex="2"/>NOTE: If you would like to upload a document and are having difficulty using a mobile device, please continue submitting your idea on a computer. 
+                        Your progress will be automatically saved from this point.
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    
+                    <br/><br/><br/> <br/><br/><br/>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Tell us about any professional or personal experience you may have as it relates to your idea <span style="color:red;">*</span></span>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    
+                    
+                    <div class="slds-col slds-size_3-of-8">
+                        <ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.Any_professional_or_personal_abt_idea_25__c}" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                    
+                    <br/><br/><br/> <br/> <br/> <br/> 
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8">
+                        <span class=".slds-float_left" Style="font-size: 14pt;font-family: arial;">Tell us a little bit more about yourself<span style="color:red;">*</span></span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-8">
+                        <ui:inputTextArea aura:id="my-element" class="slds-input" value="{!v.IdeaThatWork.Tell_us_a_little_bit_more_about_yourself__c}" />
+                        You can start by telling us what your favorite Carhartt product is and why it's your favorite, but please feel free to share more!*
+                    </div>
+                    <div class="slds-col slds-size_1-of-8">
+                        <span class=".slds-float_left"></span>
+                    </div> 
+                </div>
+            </div>
+            
+            <br/>
+            <div class="slds-float--right">
+                <!-- <input onclick="{!c.gotoURL}" type="button"  value="Preview Idea" style="background-color:#fdb913;
+                                                                                                    border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                    font-size: 20px; height:50px; width:150px;" >
+                                </input>&nbsp; -->
+                <input onclick="{!c.handleClickPrevious}" type="button"  value="Back" style="background-color:#fdb913;
+                                                                                             border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                             font-size: 20px; height:50px; width:150px; " >
+                </input>&nbsp; 
+                <input onclick="{!c.SubmitIdea}" type="button"  value="Submit Idea" style="background-color:#fdb913;
+                                                                                           border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                           font-size: 20px; height:50px; width:150px; " >
+                </input>
+                
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            
+            <br/> <br/><br/><br/>
+            
+            <!--Use "slds-m-around- -xx-large" class to add standard Large padding to the component--> 
+            <div class="slds-m-around--xx-large">
+                
+                <aura:if isTrue="{!v.isOpen}">
+                    
+                    <!--###### MODAL BOX Start From Here ######--> 
+                    <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+                        <div class="slds-modal__container">
+                            <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+                            <div class="slds-modal__header">
+                                
+                                <h2 id="header99" class="slds-text-heading--medium">Thank You!</h2>
+                            </div>
+                            <!--###### MODAL BOX BODY Part Start From Here ######-->
+                            <div class="slds-modal__content slds-p-around--medium">
+                                <p>Thank you for sharing your idea with Carhartt! <br/> <br/>
+                                    Your idea ( {!v.IdeaNumber} ) has been successfully submitted and there is nothing left for you to do at this time. 
+                                    <br/><br/>If you’d like to make any changes to your idea, please click ‘Update Idea’ below before closing out of this window or your web browser. After closing this window and/or browser, you will no longer be able to edit your idea. 
+                                    <br/><br/>Please feel free to reach out to ideasthatwork@carhartt.com if you have any questions. 
+                                    <br/> <br/> <br/>Thanks again!  </p>
+                            </div>
+                            <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+                            <div class="slds-modal__footer">
+                                <input onclick="{!c.ClosePopUp}" type="Button"  value="Update Idea" style="background-color:#fdb913;
+                                                                                                           border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                           font-size: 20px; height:50px; width:150px;" >
+                                </input>
+                                &nbsp;
+                                <input onclick="{!c.gotoURL}" type="button"  value="Print" style="background-color:#fdb913;
+                                                                                                  border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                  font-size: 20px; height:50px; width:150px;" >
+                                </input>
+                                &nbsp;
+                                
+                                <a href="https://www.carhartt.com/">
+                                    <input onclick="{!c.closeModel}" type="button"  value="Close" style="background-color:#fdb913;
+                                                                                                         border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                         font-size: 20px; height:50px; width:150px; " >
+                                    </input>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-backdrop slds-backdrop--open"></div>
+                    <!--###### MODAL BOX Part END Here ######-->
+                    
+                </aura:if>
+            </div>
+            
+        </div>
+    </div> 
+    
+    <br/><br/><br/>   
+</aura:component>

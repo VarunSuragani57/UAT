@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_NEW</letterhead>
+    <name>2017 Industrial Catalog</name>
+    <style>freeForm</style>
+    <subject>2014 Industrial Catalog</subject>
+    <textOnly>Here is the 2017 Industrial catalog. please review and let me know if you have any questions.
+
+
+Thanks
+
+
+Greg Harris
+
+Industrial/FR account manager
+
+West Region
+
+512 788 0024 cell</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer PromoCode</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer PromoCodes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agent Name --></label>
+        <name>Agent_Name__c</name>
+        <relationshipLabel><!-- Customer PromoCodes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date and Time --></label>
+        <name>Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display PromoCode --></label>
+        <name>Display_PromoCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- PromoCode Issue --></label>
+        <name>PromoCode_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- PromoCode Used --></label>
+        <name>PromoCode_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Code Type --></label>
+        <name>Promo_Code_Type__c</name>
+        <picklistValues>
+            <masterLabel>11111</masterLabel>
+            <translation><!-- 11111 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22222</masterLabel>
+            <translation><!-- 22222 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33333</masterLabel>
+            <translation><!-- 33333 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44444</masterLabel>
+            <translation><!-- 44444 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55555</masterLabel>
+            <translation><!-- 55555 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Customer PromoCode Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

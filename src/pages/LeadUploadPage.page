@@ -1,0 +1,195 @@
+<apex:page controller="UploadOpportunityScheduleLineItem" lightningStylesheets="true" showHeader="false" >
+    <apex:slds />
+    <body class="slds-scope">
+        <apex:form >
+            <apex:sectionHeader title="Upload data from CSV file to Lead"/>
+            <apex:pagemessages />  
+            <center>
+                <b>Select Recordtype : </b> <apex:selectList size="1" value="{!selectedname}"> 
+                <apex:selectOptions value="{!selectedCaseRecordtyps}"/>  
+                </apex:selectList>&nbsp;&nbsp;
+                <apex:inputFile value="{!contentFile}" filename="{!nameFile}"   id="fileUploadInput01"  />
+                <apex:outputLabel styleClass="slds-file-selector__body" for="fileUploadInput01"/>
+                <apex:commandButton action="{!ReadFile}" value="Upload File " id="theButton"  styleClass="slds-button slds-button--brand "/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<apex:commandButton action="{!insertfile}" value="Submit Data"  styleClass="slds-button slds-button--brand "/>
+                <br/> <br/>
+            </center>  
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="NUMBEROFEMPLOYEES">Lead OwnerName</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LASTNAME">LASTNAME</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LASTNAME">FIRSTNAME</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LASTNAME">SALUTATION</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="TITLE">TITLE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="COMPANY">COMPANY</div>
+                        </th>
+                         <th scope="col">
+                            <div class="slds-truncate" title="STREET">STREET</div>
+                        </th>
+                       <th scope="col">
+                            <div class="slds-truncate" title="CITY">CITY</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="STATE">STATE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="POSTALCODE">POSTALCODE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="COUNTRY">COUNTRY</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="STATECODE">STATECODE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="COUNTRYCODE">COUNTRYCODE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LATITUDE">LATITUDE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LONGITUDE">LONGITUDE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="GEOCODEACCURACY">GEOCODEACCURACY</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="PHONE">PHONE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="FAX">FAX</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="EMAIL">EMAIL</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="WEBSITE">WEBSITE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="DESCRIPTION">DESCRIPTION</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="LEADSOURCE">LEADSOURCE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="STATUS">STATUS</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="INDUSTRY">INDUSTRY</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="RATING">RATING</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="ANNUALREVENUE">ANNUALREVENUE</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="NUMBEROFEMPLOYEES">NUMBEROFEMPLOYEES</div>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <apex:repeat value="{!mapUnmatchedSchedules}" var="mapID">
+                    <tbody>
+                        <tr>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][0]}</div>
+                            </td> 
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][1]}</div>
+                            </td >
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][2]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][3]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][4]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][5]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][6]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][7]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][8]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][9]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][10]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][11]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][12]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][13]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][14]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][15]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][16]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][17]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][18]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][19]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][20]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][21]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][22]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][23]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][24]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][25]}</div>
+                            </td>
+                            <td scope="row" data-label="Opportunity Name">
+                                <div class="slds-truncate" >{!mapUnmatchedSchedules[mapID][26]}</div>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </apex:repeat>
+            </table>
+        </apex:form> 
+    </body>  
+</apex:page>

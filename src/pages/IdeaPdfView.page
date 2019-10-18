@@ -1,0 +1,346 @@
+<apex:page renderAs="pdf" controller="IdeasThatWorkPageController">
+   <head>
+      <Style>
+             @page {  
+                      size: A4 landscape; /* ISO/JIS A4 (210mm297mm) */  
+                      margin: 5mm; 
+                   } 
+             @page:first {  
+                      size: A4 landscape; /* ISO/JIS A4 (210mm297mm) */ 
+                      margin: 5mm; 
+                      margin-top: 3mm; 
+                   }  
+             .label{
+                 font-size: 13px;
+                 color: #000;
+             }
+      </style>
+   </head> 
+    <img src="{!$Resource.IdeasthatworkHeader}" class="slds-align_absolute-center" width="100%"/> 
+   <div Style="background-color:#FFF8E8;font-family: Arial Unicode MS; font-size: 11pt;" class="slds-text-heading_medium">
+     <p>Have you ever had an idea for a new Carhartt product or an idea on how to improve an existing Carhartt product, but didn’t know who to share your idea with? Welcome to “Ideas That Work” – a place where you can submit your own ideas for Carhartt products and improvements.<br/></p>
+                        <p>Hamilton Carhartt founded the company over 125 years ago by talking to railroad workers to understand what they needed in a perfect pair of overalls. This was the beginning of a legacy founded on listening to our hard-working consumers so we can make the best possible products and provide the ideal workwear experience. We’re excited to review your unique and fresh ideas so that we can continue to innovate and create best-in-class gear!<br/></p>
+                        <ul style="list-style-type:square">
+                         <li><p><b>What can I do to help turn my idea into reality?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <li><p> Carhartt will review all ideas that have been submitted; however, ideas that have been well thought-out and communicated have a better chance of making it to the finish line - the more information the better! We love to see that you’re really passionate about your hardworking idea. <br/></p></li>
+                        </ul>
+                        <ul style="list-style-type:square">
+                            <li><p><b>What happens once I've submitted an idea?</b></p></li>
+                        </ul>
+                        <ul style="list-style-type:none">
+                        <li><p>Once an idea is submitted, it is reviewed by a cross-functional committee. Selected ideas will go into Carhartt’s innovation pipeline for further exploration and could eventually end up being sold on Carhartt.com and in stores. Please note you will not receive any updates or information regarding the status of your idea during the review process.<br/></p></li>
+                        </ul>
+                         <ul style="list-style-type:square">
+                         <li><p><b>Will I be able to change my idea after I submit?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <li><p>You are able to make changes to your idea by pressing the ‘Update Idea’ button on the Thank You pop-up message after you first submit your idea. You will NOT be able to make any changes once you close out of the Thank You message or close your web browser. If you have any changes you’d like to make and have already closed out of the Thank You message or have closed your browser, we suggest completing a new submission form and resubmitting.<br/></p></li>
+                        </ul>
+                          
+                        <ul style="list-style-type:square">
+                         <li><p><b>Do I get compensated for submitting an idea? What if my idea is used?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <li><p>
+                            Carhartt is not required to, and may not, compensate you for using your idea. In order to protect yourself and Carhartt, it is
+                            recommended that you consult with an attorney prior to submitting your idea. You may have proprietary rights and may
+                            want to protect your idea with a patent. If you share your idea with Carhartt without a patent, you will forfeit proprietary
+                            rights to your idea. If Carhartt decides to use your idea, and the idea is protected by a patent that was issued prior to the
+                            time of your submission, we may negotiate with you to license the rights to your patent.
+                            <br/></p></li>
+                        </ul>
+
+
+                        
+                        <ul style="list-style-type:square">
+                         <li><p><b>Who do I contact with questions or comments?</b></p></li>
+                         </ul>
+                       <ul style="list-style-type:none">
+                        <li><p>If you have any questions, please email them to: IDEASTHATWORK@CARHARTT.COM </p></li>  
+                        </ul>                
+    
+      <br/>
+   </div>
+   <apex:form >
+      <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8">
+         <tr>
+            <td style="width: 100px;font-family: Arial Unicode MS; font-size: 11pt;" class="slds-text-heading_small" colspan="2">
+               <H3>Before submitting your idea, please read and check all of the below legal terms and conditions.</H3>
+               <br/>
+            </td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >I am at least 18 years old at the time of submission.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >I understand and agree that to be effective, any change to this Submission Agreement must be approved in writing by an officer of Carhartt, Inc</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >In consideration for Carhartt, Inc. accepting my idea, I agree that the terms of this Submission Agreement are subject to the laws of the State of Michigan.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >To the best of my knowledge, this is my original idea, which has not been copied or taken from anyone else. Alternatively, I am the parent/legal guardian of a minor who is the sole originator/owner of the idea.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" > I understand and certify that my idea submission does not/will not infringe upon any right of another person or entity.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >I understand and agree that I am submitting my idea to Carhartt, Inc. on a non- confidential basis. I agree that there will be no confidential relationship of any kind between Carhartt, Inc. and me unless we separately agree to that in writing. Carhartt, Inc. is not obligated to keep secret any information that I submit under this agreement.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" > I understand and agree that the only protection I have for my idea is any patent protection that exists at the time of this idea submission.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >I understand and agree that upon submission, Carhartt Inc. shall become the full and complete owner of my idea. Carhartt, Inc. will then have the unrestricted right to retain, use, disclose, license and sell my idea and materials.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" >Carhartt, Inc. is not obligated to review, develop or pursue my idea.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" > I understand and agree that Carhartt, Inc. is not required to, and may not, compensate me for using my idea.</td>
+         </tr>
+         <tr>
+            <td style="width: 50px;" >
+               <apex:outputField value="{!IdeaThatWorkRecord.TermCondition__c}"  />
+            </td>
+            <td style="width: 650px;" > I understand and agree that this Submission Agreement constitutes the entire agreement between Carhartt, Inc. and me pertaining to this idea.</td>
+         </tr>
+      </table>
+   </apex:form>
+   <br/>
+   <br/>
+   <table style="width: 700px;background-color: #FFF8E8;font-family: Arial Unicode MS; font-size: 11pt;">
+      <tbody>
+         <tr>
+            <td style="width: 100px;font-family: Arial Unicode MS; font-size: 11pt;" class="slds-text-heading_small" colspan="4">
+             <H3>Idea Number: {!IdeaThatWorkRecord.Name}</H3>
+               <br/> 
+            </td>
+         </tr>
+         <tr>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">First Name:</label><br/><br/></td>
+            <td style="width: 300px;">{!IdeaThatWorkRecord.First_Name__c} <br/><br/></td>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name:</label><br/><br/></td>
+            <td style="width: 300px;">{!IdeaThatWorkRecord.Last_Name__c}<br/><br/></td>
+         </tr>
+         <tr>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">Email:</label><br/><br/></td>
+            <td style="width: 300px;">{!IdeaThatWorkRecord .Email__c}<br/><br/></td>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone Number:</label><br/><br/></td>
+            <td style="width: 300px;">{!IdeaThatWorkRecord.Phone_Number__c}<br/><br/></td>
+         </tr>
+      </tbody>
+   </table>
+   <br/>
+   <br/>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Idea Category:</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Idea_Category__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Please give your idea a category using the text box below*:</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Idea_Category_Others_11__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>What kind of product idea do you have?*</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Kind_of_Product_Idea__c}" />
+               <br/>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Idea Title:</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Idea_Title_13__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;" valign="top"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Tell us about your idea in the text box below*</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Tell_us_about_your_idea_14__c}" />
+               <br/>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Describe the type of person you think would be most interested in your
+               idea or purchasing your product*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Interested_in_your_idea_or_purchasing_15__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>If Carhartt were to make something similar to your idea, how much do
+               you think your friends/family would pay for it?*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Carhartt_make_something_similar__c}" />
+               <br/>
+            </td>
+         </tr>
+         
+      </tbody>
+   </table>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+        
+         <tr>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">Is Carhartt currently offering (or has offered in the past) something similar
+               to your idea?</label>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;"> 
+               {!IdeaThatWorkRecord.Carhartt_currently_offering_your_idea__c}      
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/> Please explain what Carhartt is offering (or has offered in the past) that is
+               similar to your idea*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Explain_Carhartt_offers_to_idea_19__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Are there other brands that are currently offering (or have offered in the
+               past) something similar to your idea?*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Are_there_other_brands_currently_20__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Please explain what other brands are currently offering (or have offered
+               in the past) that is similar to your idea*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.what_other_brands_similar_to_idea_21__c}" />
+               <br/>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+         
+         <tr>
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01">Do you have any information regarding copyrights, patents, or
+               trademarks related to your idea?*</label>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               {!IdeaThatWorkRecord.Information_regarding_copyrights_22__c}      
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/> Please provide any information you have on copyrights, patents, or
+               trademarks related to your idea*</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Information_regarding_copyrights_Text_23__c}" />
+               <br/>
+            </td>
+         </tr>
+         
+      </tbody>
+   </table>
+   <table style="width: 700px;font-family: Arial Unicode MS; font-size: 11pt;background-color: #FFF8E8" >
+      <tbody>
+         
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/>Tell us about any professional or personal experience you may have as it
+               relates to your idea.</label><br/>
+            </td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Any_professional_or_personal_abt_idea_25__c}" />
+               <br/>
+            </td>
+         </tr>
+         <tr >
+            <td style="width: 200px;"><label class="slds-form-element__label" for="input-id-01" aura:id="OtherCategory"><br/> Tell us a little bit more about yourself.</label><br/></td>
+            <td style="width: 300px;"></td>
+            <td style="width: 500px;">
+               <BR/>
+               <apex:outputField value="{!IdeaThatWorkRecord.Tell_us_a_little_bit_more_about_yourself__c}" />
+               <br/>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</apex:page>

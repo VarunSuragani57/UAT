@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The internal SAP document category code --></help>
+        <label><!-- Document Category --></label>
+        <name>ensxapp__Document_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tab Name --></label>
+        <name>ensxapp__Tab_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tab Namespace --></label>
+        <name>ensxapp__Tab_Namespace__c</name>
+    </fields>
+</CustomObjectTranslation>

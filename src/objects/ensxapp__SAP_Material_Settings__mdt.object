@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configuration for ENSX_SFCI SAP Customer Information App Materials</description>
+    <fields>
+        <fullName>ensxapp__Entity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Entity</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>SAP_Material_Settings</relationshipLabel>
+        <relationshipName>SAP_Material_Settings</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Material_Number_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Product2 field that contains the SAP Material Number</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Material Number Field</label>
+        <metadataRelationshipControllingField>ensxapp__SAP_Material_Settings__mdt.ensxapp__Entity__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>SAP_Material_Settings</relationshipLabel>
+        <relationshipName>SAP_Material_Settings</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Material Setting</label>
+    <pluralLabel>SAP Material Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

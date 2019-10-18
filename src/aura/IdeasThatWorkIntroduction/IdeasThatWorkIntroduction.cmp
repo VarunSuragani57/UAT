@@ -1,0 +1,73 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global"  >
+    <aura:registerEvent name="appEvent" type="c:SampleEvent"/>
+    <div  Style="background-color:#FDB813;">
+        <br></br>
+        <img src="{!$Resource.IdeasthatworkHeader}" class="slds-align_absolute-center" width="800"/>
+        
+        <div class="child" Style="background-color:#FFF8E8; color:#000000; margin-left:5%;margin-right:5%;font-family: Arial; font-size: 14pt;font-weight: lighter;">
+            <br/>
+            <div class="slds-form-element"  Style="margin-left:5%;margin-right:5%;">
+                <div class="slds-form-element__control">
+                    <br/>
+                    <tr>
+                        <td style="width: 600px;"  colspan="2"><b></b><br/><br/></td>
+                    </tr>
+                    <div Style="Width:100%"  >
+                        <ul style="list-style-type:none">
+                        <p>Have you ever had an idea for a new Carhartt product or an idea on how to improve an existing Carhartt product, but didn’t know who to share your idea with? Welcome to “Ideas That Work” – a place where you can submit your own ideas for Carhartt products and improvements.<br/><br/></p>
+                        </ul>
+                        <ul style="list-style-type:none">    
+                        <p>Hamilton Carhartt founded the company over 125 years ago by talking to railroad workers to understand what they needed in a perfect pair of overalls. This was the beginning of a legacy founded on listening to our hard-working consumers so we can make the best possible products and provide the ideal workwear experience. We’re excited to review your unique and fresh ideas so that we can continue to innovate and create best-in-class gear!<br/><br/></p>
+                        </ul>
+                            <ul style="list-style-type:square">
+                         <li><p><b>What can I do to help turn my idea into reality?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <p> Carhartt will review all ideas that have been submitted; however, ideas that have been well thought-out and communicated have a better chance of making it to the finish line - the more information the better! We love to see that you’re really passionate about your hardworking idea. <br/><br/></p>
+                        </ul>
+                            <ul style="list-style-type:square">
+                            <li><p><b>What happens once I've submitted an idea?</b></p></li>
+                        </ul>
+                        <ul style="list-style-type:none">
+                        <p>Once an idea is submitted, it is reviewed by a cross-functional committee. Selected ideas will go into Carhartt’s innovation pipeline for further exploration and could eventually end up being sold on Carhartt.com and in stores. Please note you will not receive any updates or information regarding the status of your idea during the review process.<br/><br/></p>
+                        </ul>
+                            <ul style="list-style-type:square">
+                         <li><p><b>Will I be able to change my idea after I submit?</b></p></li>
+                         </ul>
+						 <ul style="list-style-type:none">
+                        <p>You are able to make changes to your idea by pressing the ‘Update Idea’ button on the Thank You pop-up message after you first submit your idea. You will NOT be able to make any changes once you close out of the Thank You message or close your web browser. If you have any changes you’d like to make and have already closed out of the Thank You message or have closed your browser, we suggest completing a new submission form and resubmitting.<br/><br/></p>	
+                        </ul>
+                             <ul style="list-style-type:square">
+                         <li><p><b>Do I get compensated for submitting an idea? What if my idea is used?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <p>
+                            Carhartt is not required to, and may not, compensate you for using your idea. In order to protect yourself and Carhartt, it is
+                            recommended that you consult with an attorney prior to submitting your idea. You may have proprietary rights and may
+                            want to protect your idea with a patent. If you share your idea with Carhartt without a patent, you will forfeit proprietary
+                            rights to your idea. If Carhartt decides to use your idea, and the idea is protected by a patent that was issued prior to the
+                            time of your submission, we may negotiate with you to license the rights to your patent.
+                            <br/><br/>    </p>
+                        </ul>
+                        <ul style="list-style-type:square">
+                         <li><p><b>Who do I contact with questions or comments?</b></p></li>
+                         </ul>
+                        <ul style="list-style-type:none">
+                        <p>If you have any questions, please email them to: <a href="{!'https://' + v.boxStatus}">IDEASTHATWORK@CARHARTT.COM</a></p> 
+                        </ul>
+                            <br/><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-float--right">
+               <!-- <lightning:button   variant="brand" label="Back" iconName="utility:chevronleft" iconPosition="left" onclick="{! c.handleClickPrevious }"  /> -->
+                <input onclick="{! c.handleClickNext }"  type="button"  value="Next" style="background-color:#fdb913;
+                                                                                              border: none;color:white;padding: 9px 18px;border-radius: 4px;
+                                                                                                  font-size: 20px; height:50px; width:150px;">
+                </input>
+                
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            <br/> <br/><br/><br/>
+        </div> <br/> <br/><br/><br/>     </div>
+       
+</aura:component>

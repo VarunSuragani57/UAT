@@ -1,0 +1,14 @@
+<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler event="c:SampleEvent" action="{!c.handleApplicationEvent}"/> 
+    
+     <div aura:id="Sample1" >
+   <c:IdeasThatWorkIntroduction/>
+    </div>
+   <div aura:id="Sample2" class="slds-hide">
+  <c:ContactLegalTermConditions/>
+    </div>
+    <div aura:id="Sample3" class="slds-hide">
+        <c:ContactIdeas/>
+    </div>
+
+</aura:component>

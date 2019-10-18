@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This letter head is for Retail sales rep</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Carhartt_Email</letterhead>
+    <name>Retail Case HTML</name>
+    <style>freeForm</style>
+    <subject>{!Case.Type}</subject>
+    <textOnly>A new case has been created by: {!Case.CreatedBy} with the below details.{!Case.Link}Subject: {!Case.Subject}Case Number: {!Case.CaseNumber}Contact: {!Case.Contact}Type: {!Case.Type}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

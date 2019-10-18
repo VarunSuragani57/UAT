@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>End_User_Letter_Head</letterhead>
+    <name>SLIDER REPAIR INSTRUCTIONS</name>
+    <style>freeForm</style>
+    <subject>SLIDER REPAIR INSTRUCTIONS</subject>
+    <textOnly>Thank you for your reply. We would like to apologize for the problem that you have experienced with your garment. We are more than happy to send a replacement slider to you, please allow 1-2 weeks to receive it.
+
+
+Below we have included instructions for replacing the slider.
+
+
+Instructions:
+
+
+• Take the stop off of the top of the zipper with a pair of side cutters (apply just enough pressure to open the stop for it to come off and reuse the stop).
+
+
+• Take a pair of needle nose pliers and hold the zipper tape up to slide the slider on.
+
+
+
+
+We hope you find this information helpful. If there is anything else that we may assist you with please feel free to contact our Customer Service Department at 1-800-833-3118 Monday-Friday 8am-9pm EST.
+
+
+We appreciate your business and thank you for choosing Carhartt.
+
+
+Sincerely,
+
+
+Please follow the link below to sign up for the latest news on Carhartt deals and promotions.
+
+
+http://www.carhartt.com/webapp/wcs/stores/servlet/EmailSignupOptInPageView?catalogId=10551&amp;langId=-1&amp;storeId=10201</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

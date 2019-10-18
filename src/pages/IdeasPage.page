@@ -1,0 +1,19 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" docType="html-5.0">
+    <apex:includeLightning />
+    <apex:image url="{!$Resource.CarharttLogo}" width="100%" height="250"/>
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <div id="lightning" />
+    <script>
+    //Visualforce page to use ExposeVF Lightning app
+    $Lightning.use("c:IdeasThatWorkMainApp", function() {
+        // Function that creates the component on the page
+        $Lightning.createComponent("c:IdeasThatWorkMain",
+                                   {},
+                                   "lightning",
+                                   function(cmp) {
+                                       
+                                       console.log('From Callback');
+                                   });
+                                  });
+    </script>
+</apex:page>

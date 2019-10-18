@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Log settings for the enosiX application</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ensxapp__HTTP_Trace__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When enabled HTTP requests and responses between the enosiX application and SAP are logged at `LoggingLevel`.
+
+Requires LoggingLevel to be enabled (e.g. a value 1 through 8) for the HTTP requests/responses to be written to the log.</inlineHelpText>
+        <label>HTTP Trace</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Log_Sink__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom Log Sink that receives raw log events by implementing the &apos;ensxapp.Invokable&apos; interface.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Custom Log Sink that implements ensxapp.Invokable</inlineHelpText>
+        <label>Log Sink</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ensxapp__LoggingLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Uses the ordinal values of System.LoggingLevel:
+0 - NONE (Logging disabled)
+1 - INTERNAL
+2 - FINEST
+3 - FINER
+4 - FINE
+5 - DEBUG
+6 - INFO
+7 - WARN
+8 - ERROR</inlineHelpText>
+        <label>Logging Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>enosiX Log Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

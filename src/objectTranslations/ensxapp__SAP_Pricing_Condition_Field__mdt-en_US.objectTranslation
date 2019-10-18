@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Determines whether or not this field is intended as an input value for pricing calculations --></help>
+        <label><!-- Input --></label>
+        <name>ensxapp__Input__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether or not this field is meant to contain data returned from pricing calculations --></help>
+        <label><!-- Output --></label>
+        <name>ensxapp__Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Field --></label>
+        <name>ensxapp__SAP_Field__c</name>
+        <picklistValues>
+            <masterLabel>Condition Pricing Unit</masterLabel>
+            <translation><!-- Condition Pricing Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Condition Unit</masterLabel>
+            <translation><!-- Condition Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Condition Value</masterLabel>
+            <translation><!-- Condition Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate</masterLabel>
+            <translation><!-- Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate Unit</masterLabel>
+            <translation><!-- Rate Unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Pricing Condition --></label>
+        <name>ensxapp__SAP_Pricing_Condition__c</name>
+        <relationshipLabel><!-- SAP Pricing Condition Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Field --></label>
+        <name>ensxapp__Salesforce_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should be either Opportunity or Opportunity Product --></help>
+        <label><!-- Salesforce Object --></label>
+        <name>ensxapp__Salesforce_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will *always* override any fields that may be mapped. --></help>
+        <label><!-- Value --></label>
+        <name>ensxapp__Value__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- SAP Condition Value Fields are &quot;Output&quot; only; please de-select the &quot;Input&quot; box, and select &quot;Output&quot;. --></errorMessage>
+        <name>ensxapp__Condition_Value_Cannot_Be_Input</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The field must be an input field, an output field, or both --></errorMessage>
+        <name>ensxapp__Must_Be_An_Input_Output_or_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The field cannot be an input field if the condition it&apos;s mapped to does not support an input value. --></errorMessage>
+        <name>ensxapp__No_Input_Field_If_Condition_Not_Input</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The field cannot be an output field if the condition it&apos;s mapped to does not support an output value. --></errorMessage>
+        <name>ensxapp__No_Output_Field_If_Condition_Not_Output</name>
+    </validationRules>
+</CustomObjectTranslation>

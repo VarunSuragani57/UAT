@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Pricing information for a specific Order Type</description>
+    <fields>
+        <fullName>ensxapp__Missing_Mapping_Behavior__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines whether or not pricing should continue if products exist that are not mapped to SAP Materials</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Price allows for partial pricing of just the mapped elements
+Warning will ask for confirmation before a partial pricing
+Error will cause the whole process to throw an exception</inlineHelpText>
+        <label>Missing Mapping Behavior</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>true</default>
+                    <label>Price</label>
+                </value>
+                <value>
+                    <fullName>Warn</fullName>
+                    <default>false</default>
+                    <label>Warn</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ensxapp__Order_Type__c</fullName>
+        <defaultValue>&quot;QT&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>SAP Order Type code</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Order Type</label>
+        <length>4</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAP Pricing</label>
+    <pluralLabel>SAP Pricing</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

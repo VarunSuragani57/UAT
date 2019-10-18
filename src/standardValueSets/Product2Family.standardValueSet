@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Bottoms</fullName>
+        <default>false</default>
+        <label>Bottoms</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outerwear</fullName>
+        <default>false</default>
+        <label>Outerwear</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accessories</fullName>
+        <default>false</default>
+        <label>Accessories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tops</fullName>
+        <default>false</default>
+        <label>Tops</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The SAP field name for a custom field. This is only used if &quot;Is Custom&quot; is checked --></help>
+        <label><!-- Custom Field Name --></label>
+        <name>ensxapp__Custom_Field_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether this is a stock field, or a user defined custom field --></help>
+        <label><!-- Is Custom --></label>
+        <name>ensxapp__Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped Field --></label>
+        <name>ensxapp__Mapped_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This should only be set if the Parameter Type is &quot;Mapped Field&quot; --></help>
+        <label><!-- Mapped Object --></label>
+        <name>ensxapp__Mapped_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines how the search criteria is specified --></help>
+        <label><!-- Parameter Type --></label>
+        <name>ensxapp__Parameter_Type__c</name>
+        <picklistValues>
+            <masterLabel>Mapped Field</masterLabel>
+            <translation><!-- Mapped Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP Customer Number</masterLabel>
+            <translation><!-- SAP Customer Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Text</masterLabel>
+            <translation><!-- Static Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Delivery Search Preset --></label>
+        <name>ensxapp__SAP_Delivery_Search_Preset__c</name>
+        <relationshipLabel><!-- SAP Delivery Search Preset Parameters --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The stock SAP field for this parameter --></help>
+        <label><!-- SAP Field --></label>
+        <name>ensxapp__SAP_Field__c</name>
+        <picklistValues>
+            <masterLabel>Delivery Date From</masterLabel>
+            <translation><!-- Delivery Date From --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Date To</masterLabel>
+            <translation><!-- Delivery Date To --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Priority</masterLabel>
+            <translation><!-- Delivery Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Create Date</masterLabel>
+            <translation><!-- From Create Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PGI Date From</masterLabel>
+            <translation><!-- PGI Date From --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PGI Date To</masterLabel>
+            <translation><!-- PGI Date To --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Route</masterLabel>
+            <translation><!-- Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship To Party</masterLabel>
+            <translation><!-- Ship To Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Conditions</masterLabel>
+            <translation><!-- Shipping Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Point</masterLabel>
+            <translation><!-- Shipping Point --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold To Party</masterLabel>
+            <translation><!-- Sold To Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Create Date</masterLabel>
+            <translation><!-- To Create Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This should only be populated if the Parameter Type is &quot;Static Text&quot; --></help>
+        <label><!-- Static Value --></label>
+        <name>ensxapp__Value__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- If this is a custom field, the custom field name is required. Either enter a field name or un-check the &quot;Is Custom&quot; box --></errorMessage>
+        <name>ensxapp__Custom_field_name_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A &quot;SAP Field&quot; must be selected if this is a standard parameter. --></errorMessage>
+        <name>ensxapp__Standard_Field_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

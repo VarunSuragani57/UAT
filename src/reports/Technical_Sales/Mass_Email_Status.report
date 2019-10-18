@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WHONAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>EMAILTEMPLATENAME</field>
+    </columns>
+    <columns>
+        <field>SENDDATE</field>
+    </columns>
+    <columns>
+        <field>FIRSTOPENDATE</field>
+    </columns>
+    <columns>
+        <field>LASTOPENDATE</field>
+    </columns>
+    <columns>
+        <field>TIMESOPENED</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPENED</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Mass Email Status</name>
+    <reportType>EmailStatus</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SENDDATE</dateColumn>
+        <endDate>2009-10-14</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2009-10-14</startDate>
+    </timeFrameFilter>
+</Report>

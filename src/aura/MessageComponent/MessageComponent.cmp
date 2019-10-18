@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="message" description="Message content, can be HTML" type="String" />
+<aura:attribute name="type" description="Message type, can be error/warning/info/success" type="String" />
+    <aura:attribute name="color" description="Message type, can be error/warning/info/success" type="String" default="red" />
+<div Style="background: #d8d8da;color: red;"  class="{!'slds-box slds-theme–alert-texture slds-theme–' + v.type}" width="500px;">
+<lightning:icon iconName="{!'utility:'+ v.type }" size="medium"
+
+                       alternativeText="{!v.type}" Class="iconContainer"/>&nbsp;
+<span class="slds-text-body–regular" >
+<aura:unescapedHtml value="{!v.message}" />
+</span>
+</div>
+</aura:component>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0053 - BC, YT</fullName>
+        <default>false</default>
+        <label>0053 - BC, YT</label>
+    </customValue>
+    <customValue>
+        <fullName>0085 - Employee Sales</fullName>
+        <default>false</default>
+        <label>0085 - Employee Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>0087 - Promotions</fullName>
+        <default>false</default>
+        <label>0087 - Promotions</label>
+    </customValue>
+    <customValue>
+        <fullName>0097 - Rick Fecowicz</fullName>
+        <default>false</default>
+        <label>0097 - Rick Fecowicz</label>
+    </customValue>
+    <customValue>
+        <fullName>0110 - Outdoors &amp; Workwear</fullName>
+        <default>false</default>
+        <label>0110 - Outdoors &amp; Workwear</label>
+    </customValue>
+    <customValue>
+        <fullName>0111 - Farm</fullName>
+        <default>false</default>
+        <label>0111 - Farm</label>
+    </customValue>
+    <customValue>
+        <fullName>0112 - Department Store</fullName>
+        <default>false</default>
+        <label>0112 - Department Store</label>
+    </customValue>
+    <customValue>
+        <fullName>0113 - Wholesale.com</fullName>
+        <default>false</default>
+        <label>0113 - Wholesale.com</label>
+    </customValue>
+    <customValue>
+        <fullName>0114 - East</fullName>
+        <default>false</default>
+        <label>0114 - East</label>
+    </customValue>
+    <customValue>
+        <fullName>0115 - West</fullName>
+        <default>false</default>
+        <label>0115 - West</label>
+    </customValue>
+    <customValue>
+        <fullName>0116 - Central</fullName>
+        <default>false</default>
+        <label>0116 - Central</label>
+    </customValue>
+    <customValue>
+        <fullName>0117 - South</fullName>
+        <default>false</default>
+        <label>0117 - South</label>
+    </customValue>
+    <customValue>
+        <fullName>0118 - Inside Sales</fullName>
+        <default>false</default>
+        <label>0118 - Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>0119 - Industrial</fullName>
+        <default>false</default>
+        <label>0119 - Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>0120 - Discount Sales</fullName>
+        <default>false</default>
+        <label>0120 - Discount Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>0122 - Outside Sales</fullName>
+        <default>false</default>
+        <label>0122 - Outside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>0122 - Canada</fullName>
+        <default>false</default>
+        <label>0122 - Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>0123 - Export</fullName>
+        <default>false</default>
+        <label>0123 - Export</label>
+    </customValue>
+    <customValue>
+        <fullName>0125 - Internal</fullName>
+        <default>false</default>
+        <label>0125 - Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>0127 - Misc.</fullName>
+        <default>false</default>
+        <label>0127 - Misc.</label>
+    </customValue>
+    <description>Sales Group</description>
+    <masterLabel>Geography</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

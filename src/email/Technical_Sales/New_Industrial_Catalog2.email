@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[{!Contact.FirstName}<br><br>Attached you will find an updated Industrial catalog along with our most current pricing. Please feel free to use the catalog for distribution within your company’s network as well as current and potential end user customers.<br><br>This catalog contains Carhartt Flame Resistant styles as well as our most popular non-FR products. The items showcased in this catalog reflect our top selling styles Carhartt inventories throughout the year. This catalog can also be ordered in hard copy through Carhartt Co-Op.<br><br>Once you have received this information, please feel free to contact me at your earliest convenience should you have any questions.<br><br>At Carhartt, it is our continued pledge to provide you with excellence in our services and products. On behalf of the 5,000 people that work at Carhartt, I thank you for your commitment and dedication to the Carhartt brand.<br><br>Regards,<br><br><p class="MsoPlainText">{!User.Name}</p><p class="MsoPlainText">{!User.Phone}</p>{!User.Email}<br>]]></td>
+</tr>
+</table>

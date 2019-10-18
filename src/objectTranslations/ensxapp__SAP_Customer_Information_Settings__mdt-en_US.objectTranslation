@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer Number Field --></label>
+        <name>ensxapp__Customer_Number_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity --></label>
+        <name>ensxapp__Entity__c</name>
+    </fields>
+</CustomObjectTranslation>

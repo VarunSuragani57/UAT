@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- When enabled HTTP requests and responses between the enosiX application and SAP are logged at `LoggingLevel`.
+
+Requires LoggingLevel to be enabled (e.g. a value 1 through 8) for the HTTP requests/responses to be written to the log. --></help>
+        <label><!-- HTTP Trace --></label>
+        <name>ensxapp__HTTP_Trace__c</name>
+    </fields>
+    <fields>
+        <help><!-- Custom Log Sink that implements ensxapp.Invokable --></help>
+        <label><!-- Log Sink --></label>
+        <name>ensxapp__Log_Sink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Uses the ordinal values of System.LoggingLevel:
+0 - NONE (Logging disabled)
+1 - INTERNAL
+2 - FINEST
+3 - FINER
+4 - FINE
+5 - DEBUG
+6 - INFO
+7 - WARN
+8 - ERROR --></help>
+        <label><!-- Logging Level --></label>
+        <name>ensxapp__LoggingLevel__c</name>
+    </fields>
+</CustomObjectTranslation>

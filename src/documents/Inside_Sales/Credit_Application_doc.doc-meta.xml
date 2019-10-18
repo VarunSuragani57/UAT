@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Credit application to send to new distributor &amp; retailer prospects (2011).</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Credit Application.doc</name>
+    <public>false</public>
+</Document>

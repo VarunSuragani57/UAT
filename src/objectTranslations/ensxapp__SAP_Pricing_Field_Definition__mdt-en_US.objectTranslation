@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Can Input --></label>
+        <name>ensxapp__Can_Input__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can Output --></label>
+        <name>ensxapp__Can_Output__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>ensxapp__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- For stock SBO fields this should be the Friendly Field Name --></help>
+        <label><!-- Field Name --></label>
+        <name>ensxapp__Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Object --></label>
+        <name>ensxapp__Field_Object__c</name>
+        <picklistValues>
+            <masterLabel>Header</masterLabel>
+            <translation><!-- Header --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Item</masterLabel>
+            <translation><!-- Item --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Field must support Input, Output or both. --></errorMessage>
+        <name>ensxapp__Field_Supports_Input_or_Output</name>
+    </validationRules>
+</CustomObjectTranslation>

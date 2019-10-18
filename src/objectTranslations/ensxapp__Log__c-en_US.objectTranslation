@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context ID --></label>
+        <name>ensxapp__Context_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>ensxapp__End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Time (seconds) --></label>
+        <name>ensxapp__Execution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Level --></label>
+        <name>ensxapp__LogLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation --></label>
+        <name>ensxapp__Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page --></label>
+        <name>ensxapp__Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Body --></label>
+        <name>ensxapp__Request_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Headers --></label>
+        <name>ensxapp__Request_Headers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request URL --></label>
+        <name>ensxapp__Request_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Body --></label>
+        <name>ensxapp__Response_Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Headers --></label>
+        <name>ensxapp__Response_Headers__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBO Name --></label>
+        <name>ensxapp__SBO_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>ensxapp__Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>ensxapp__Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Message --></label>
+        <name>ensxapp__Status_Message__c</name>
+    </fields>
+</CustomObjectTranslation>

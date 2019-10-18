@@ -1,0 +1,29 @@
+<apex:page sidebar="false" showHeader="false">
+<apex:includeLightning /> 
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <style>
+        
+        body {
+        font-family: Algerian;
+        }
+        .slds-scope {
+    font-family: Arial; 
+    font-size: 14pt;
+       }
+        
+    </style>
+    <script>
+        $Lightning.use("c:ContactIdeasApp", function() {
+            $Lightning.createComponent(
+                "c:ContactIdeanMain",
+                {},
+                "theLead",
+                function(cmp) {
+                    console.log("Component created!");
+                    console.log(cmp);
+                });
+            });
+    </script>
+    
+    <div id="theLead"></div>
+</apex:page>

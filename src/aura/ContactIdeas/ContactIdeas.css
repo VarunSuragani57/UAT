@@ -1,0 +1,49 @@
+.THIS.parent {
+  width: 100%;
+  border: 1px solid ;
+  float: left;
+}
+
+.THIS.child {
+  width: 80%;
+  padding: 5%;
+  border: 1px solid black;
+  margin-left:5%;
+  margin-right:5%;
+}
+.THIS .slds-button {
+    background-color: #fdb913;
+    padding: 0.2rem 2rem;
+    margin-bottom: .5rem 0 0 .5rem;
+    width: 200px;
+    font-weight: bold !important;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: none;
+
+}
+.THIS.cContactIdeas .slds-button{
+    border-color: rgb(250, 250, 251);
+}
+
+
+
+.THIS.slds-scope .slds-form-element__label {
+    display: inline-block;
+    color: rgb(107, 109, 112);
+    
+    font-family: Arial;
+    margin-right: .5rem;
+    padding-top: .25rem;
+    margin-bottom: .125rem;
+}
+
+
+.THIS.slds-scope.slds-input1{
+/*border-left-width: 2px!important;*/
+    border-left-color: red!important;
+    border-radius: 5px!important;
+    border-width:0.5px 0.5px 0.5px 2px!important;
+    border-style: solid!important;
+    
+}
